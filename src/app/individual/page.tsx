@@ -110,7 +110,7 @@ export default function IndividualPage() {
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { caption: "Dictate Session Notes", src: "/screenshot-dictate.png" },
-              { caption: "Creation of Clinical Note", src: "/app-screenshot.png" },
+              { caption: "Creation of Clinical Note", src: "/screenshot-clinical-note.png" },
               { caption: "Surface Alignments for Pre-Authorization", src: "/app-screenshot.png" },
               { caption: "Review and Export", src: "/app-screenshot.png" },
             ].map(({ caption, src }) => (
