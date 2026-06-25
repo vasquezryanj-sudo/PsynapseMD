@@ -177,19 +177,6 @@ export default function IndividualPage() {
         </div>
       </section>
 
-      {/* Built for Interventional Psychiatry */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
-              Built for Interventional Psychiatry.
-            </h2>
-            <p className="text-[#4B5563] leading-relaxed text-lg">
-              PsynapseMD was built for TMS, ketamine, and Spravato — not adapted from a generic documentation tool. It understands your clinical context, your treatment phases, and what payers expect from these modalities.
-            </p>
-          </div>
-        </div>
-      </section>
 
 
       {/* CTA */}
