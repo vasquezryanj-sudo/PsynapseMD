@@ -139,7 +139,7 @@ export default function ClinicsPage() {
             {[
               { caption: "Dictate Session Notes", src: "/screenshot-dictate.png" },
               { caption: "Creation of Clinical Note", src: "/screenshot-clinical-note.png" },
-              { caption: "Surface Alignments for Pre-Authorization", src: "/app-screenshot.png" },
+              { caption: "Surface Alignments for Pre-Authorization", src: "/screenshot-prior-auth.png" },
               { caption: "Review and Export", src: "/app-screenshot.png" },
             ].map(({ caption, src }) => (
               <div key={caption} className="flex flex-col rounded-2xl overflow-hidden border border-[#E5E3DC]">
