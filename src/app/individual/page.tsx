@@ -112,7 +112,7 @@ export default function IndividualPage() {
               { caption: "Dictate Session Notes", src: "/screenshot-dictate.png" },
               { caption: "Creation of Clinical Note", src: "/screenshot-clinical-note.png" },
               { caption: "Surface Alignments for Pre-Authorization", src: "/screenshot-prior-auth.png" },
-              { caption: "Review and Export", src: "/app-screenshot.png" },
+              { caption: "Review and Export", src: "/screenshot-review-export.png" },
             ].map(({ caption, src }) => (
               <div key={caption} className="flex flex-col rounded-2xl overflow-hidden border border-[#E5E3DC]">
                 <img src={src} alt={caption} className="w-full h-auto block" />
