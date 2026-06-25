@@ -191,29 +191,6 @@ export default function IndividualPage() {
         </div>
       </section>
 
-      {/* A Day With PsynapseMD */}
-      <section className="py-20 bg-[#F7F6F2]">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-10 font-[family-name:var(--font-jakarta)]">
-            A Typical Session
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-6">
-              {walkthroughSteps.map((step, i) => (
-                <div key={i} className="flex items-start gap-5">
-                  <div className="flex-shrink-0 w-9 h-9 rounded-full bg-[#0A7C6E] text-white flex items-center justify-center text-sm font-bold">
-                    {i + 1}
-                  </div>
-                  <p className="text-[#4B5563] leading-relaxed pt-1.5">{step}</p>
-                </div>
-              ))}
-            </div>
-            <div className="rounded-2xl overflow-hidden border border-[#E5E3DC]">
-              <img src="/app-screenshot.png" alt="PsynapseMD clinical documentation interface" className="w-full h-auto block" />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <CtaSection
