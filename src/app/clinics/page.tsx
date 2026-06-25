@@ -135,8 +135,20 @@ export default function ClinicsPage() {
           </h2>
           <p className="text-[#4B5563] mb-12 text-lg">Three steps. No disruption.</p>
           <HowItWorks variant="clinic" />
-          <div className="mt-12 rounded-2xl overflow-hidden border border-[#E5E3DC]">
-            <img src="/app-screenshot.png" alt="PsynapseMD clinical documentation interface" className="w-full h-auto block" />
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              "Dictate Session Notes",
+              "Creation of Clinical Note",
+              "Surface Alignments for Pre-Authorization",
+              "Review and Export",
+            ].map((caption) => (
+              <div key={caption} className="flex flex-col rounded-2xl overflow-hidden border border-[#E5E3DC]">
+                <img src="/app-screenshot.png" alt={caption} className="w-full h-auto block" />
+                <div className="px-4 py-3 bg-white border-t border-[#E5E3DC]">
+                  <p className="text-xs font-semibold text-[#4B5563] uppercase tracking-widest">{caption}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
