@@ -11,9 +11,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
-          <div className="w-[140px] h-8 bg-[#E5E3DC] rounded flex items-center justify-center">
-            <span className="text-[10px] font-semibold text-[#9CA3AF] uppercase tracking-widest">Logo</span>
-          </div>
+          <img src="/logo.png" alt="PsynapseMD" className="h-9 w-auto" />
         </Link>
 
         {/* Desktop Nav */}

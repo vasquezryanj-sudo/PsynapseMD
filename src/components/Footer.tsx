@@ -10,9 +10,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-start justify-between gap-12">
           {/* Logo + tagline */}
           <div className="flex-shrink-0 max-w-[200px]">
-            <div className="w-[140px] h-8 bg-[#1F2937] rounded flex items-center justify-center mb-4">
-              <span className="text-[10px] font-semibold text-gray-500 uppercase tracking-widest">Logo</span>
-            </div>
+            <img src="/logo.png" alt="PsynapseMD" className="h-10 w-auto mb-4 brightness-0 invert" />
             <p className="text-xs text-gray-500 leading-relaxed">
               AI-assisted clinical documentation for interventional psychiatry.
             </p>
