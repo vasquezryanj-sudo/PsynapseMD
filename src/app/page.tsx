@@ -51,6 +51,13 @@ export default function Home() {
               </svg>
             </Link>
           </div>
+
+          <p className="mt-10 text-xs text-[#9CA3AF]">
+            Built with clinical ethics and patient safety at the center.{" "}
+            <Link href="/responsible-use" className="text-[#0A7C6E] hover:underline font-medium">
+              Read our Responsible Use framework →
+            </Link>
+          </p>
         </div>
       </section>
 

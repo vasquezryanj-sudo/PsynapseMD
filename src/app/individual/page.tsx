@@ -161,7 +161,7 @@ export default function IndividualPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-8 font-[family-name:var(--font-jakarta)]">
               You&apos;re Always in Control.
             </h2>
-            <div className="space-y-5">
+            <div className="space-y-5 mb-10">
               {controlPoints.map((point, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#0A7C6E] flex items-center justify-center mt-0.5">
@@ -172,6 +172,20 @@ export default function IndividualPage() {
                   <p className="text-[#111827] text-lg font-medium leading-relaxed">{point}</p>
                 </div>
               ))}
+            </div>
+            <div className="border-t border-[#E5E3DC] pt-8">
+              <p className="text-[#4B5563] text-sm leading-relaxed mb-3">
+                These aren&apos;t just product features — they reflect how this tool was designed to be used ethically in a clinical setting.
+              </p>
+              <Link
+                href="/responsible-use"
+                className="inline-flex items-center gap-2 text-[#0A7C6E] font-semibold text-sm hover:gap-3 transition-all"
+              >
+                Read our Responsible Use framework
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
             </div>
           </div>
         </div>

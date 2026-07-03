@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ImagePlaceholder from "./ImagePlaceholder";
 
 const pillars = [
@@ -44,8 +45,22 @@ export default function ComplianceSection() {
           </div>
         ))}
       </div>
-      <div>
+      <div className="flex flex-col gap-8">
         <ImagePlaceholder label="Compliance Badge Row" aspectRatio="3/1" />
+        <div className="border-t border-[#E5E3DC] pt-6">
+          <p className="text-[#4B5563] text-sm leading-relaxed mb-3">
+            Responsibility is built into the design of this product — not added on after. We publish our approach openly.
+          </p>
+          <Link
+            href="/responsible-use"
+            className="inline-flex items-center gap-2 text-[#0A7C6E] font-semibold text-sm hover:gap-3 transition-all"
+          >
+            Read our Responsible Use framework
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
+        </div>
       </div>
     </div>
   );

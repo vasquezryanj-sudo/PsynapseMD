@@ -27,7 +27,8 @@ export default function Footer() {
 
           {/* Legal */}
           <nav className="flex flex-col gap-3">
-            <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-1">Legal</p>
+            <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-1">Legal &amp; Ethics</p>
+            <Link href="/responsible-use" className="text-sm text-gray-400 hover:text-white transition-colors">Responsible Use</Link>
             <a href="#" className="text-sm text-gray-500 hover:text-gray-300 transition-colors">Privacy Policy</a>
             <a href="#" className="text-sm text-gray-500 hover:text-gray-300 transition-colors">Terms of Use</a>
             <a href="#" className="text-sm text-gray-500 hover:text-gray-300 transition-colors">HIPAA Notice</a>
