@@ -137,15 +137,32 @@ export default function ClinicsPage() {
           <HowItWorks variant="clinic" />
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { caption: "Dictate Session Notes", src: "/screenshot-dictate.png" },
-              { caption: "Ketamine Treatment Dashboard", src: "/screenshot-clinical-note.png" },
-              { caption: "Interventional Readiness — Type 1 Referral", src: "/screenshot-prior-auth.png" },
-              { caption: "Review and Export", src: "/screenshot-review-export.png" },
-            ].map(({ caption, src }) => (
+              {
+                caption: "Dictate Session Notes",
+                description: "Speak naturally after the session. PsynapseMD transcribes and structures your observations in real time.",
+                src: "/screenshot-dictate.png",
+              },
+              {
+                caption: "Ketamine Treatment Dashboard",
+                description: "Track symptom scores, treatment timeline, tolerability, and functional improvement across the full course of care — all in one view.",
+                src: "/screenshot-clinical-note.png",
+              },
+              {
+                caption: "Interventional Readiness — Type 1 Referral",
+                description: "For initial consultations, PsynapseMD surfaces treatment resistance criteria, prior medication trials, and contraindication screening to support prior authorization from the first note.",
+                src: "/screenshot-prior-auth.png",
+              },
+              {
+                caption: "Review and Export",
+                description: "Every note is fully editable before you attest. Export to PDF or copy directly to your EHR.",
+                src: "/screenshot-review-export.png",
+              },
+            ].map(({ caption, description, src }) => (
               <div key={caption} className="flex flex-col rounded-2xl overflow-hidden border border-[#E5E3DC]">
                 <img src={src} alt={caption} className="w-full h-auto block" />
-                <div className="px-4 py-3 bg-white border-t border-[#E5E3DC]">
-                  <p className="text-xs font-semibold text-[#4B5563] uppercase tracking-widest">{caption}</p>
+                <div className="px-5 py-4 bg-white border-t border-[#E5E3DC]">
+                  <p className="text-xs font-bold text-[#111827] uppercase tracking-widest mb-1.5">{caption}</p>
+                  <p className="text-xs text-[#6B7280] leading-relaxed">{description}</p>
                 </div>
               </div>
             ))}
