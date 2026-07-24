@@ -141,26 +141,30 @@ export default function ClinicsPage() {
                 caption: "Dictate Session Notes",
                 description: "Speak naturally after the session. PsynapseMD transcribes and structures your observations in real time.",
                 src: "/screenshot-dictate.png",
+                pos: "object-top",
               },
               {
                 caption: "Ketamine Treatment Dashboard",
                 description: "Track symptom scores, treatment timeline, tolerability, and functional improvement across the full course of care — all in one view.",
                 src: "/screenshot-clinical-note.png",
+                pos: "object-top",
               },
               {
                 caption: "Interventional Readiness — Type 1 Referral",
                 description: "For initial consultations, PsynapseMD surfaces treatment resistance criteria, prior medication trials, and contraindication screening to support prior authorization from the first note.",
                 src: "/screenshot-prior-auth.png",
+                pos: "object-top",
               },
               {
                 caption: "Review and Export",
                 description: "Every note is fully editable before you attest. Export to PDF or copy directly to your EHR.",
                 src: "/screenshot-review-export.png",
+                pos: "object-center",
               },
-            ].map(({ caption, description, src }) => (
+            ].map(({ caption, description, src, pos }) => (
               <div key={caption} className="flex flex-col rounded-2xl overflow-hidden border border-[#E5E3DC]">
                 <div className="w-full h-56 overflow-hidden bg-[#F0EFEB]">
-                  <img src={src} alt={caption} className="w-full h-full object-cover object-top" />
+                  <img src={src} alt={caption} className={`w-full h-full object-cover ${pos}`} />
                 </div>
                 <div className="px-5 py-4 bg-white border-t border-[#E5E3DC]">
                   <p className="text-xs font-bold text-[#111827] uppercase tracking-widest mb-1.5">{caption}</p>
