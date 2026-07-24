@@ -153,7 +153,7 @@ export default function AboutPage() {
                 Responsible by design, not afterthought.
               </h2>
               <p className="text-[#4B5563] leading-relaxed text-lg mb-6">
-                AI in clinical settings carries real responsibility. PsynapseMD was built under a formal AI and data governance framework — covering transparency, accountability, and human oversight from the first design decision through deployment.
+                AI in clinical settings carries real responsibility. PsynapseMD's governance policy was written by a credentialed AI Governance Professional (AIGP) — not self-certified. Privacy and data limitation are structural design decisions, not settings. And accountability doesn't end at launch: we provide ongoing support to ensure the tool is used appropriately in your practice.
               </p>
               <p className="text-[#4B5563] leading-relaxed text-lg mb-10">
                 No note is finalized without clinician review and attestation. Patient data is never used to train AI models. The AI structures documentation — it does not make clinical decisions.
