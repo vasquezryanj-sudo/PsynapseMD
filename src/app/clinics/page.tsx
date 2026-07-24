@@ -159,7 +159,9 @@ export default function ClinicsPage() {
               },
             ].map(({ caption, description, src }) => (
               <div key={caption} className="flex flex-col rounded-2xl overflow-hidden border border-[#E5E3DC]">
-                <img src={src} alt={caption} className="w-full h-auto block" />
+                <div className="w-full h-56 overflow-hidden bg-[#F0EFEB]">
+                  <img src={src} alt={caption} className="w-full h-full object-cover object-top" />
+                </div>
                 <div className="px-5 py-4 bg-white border-t border-[#E5E3DC]">
                   <p className="text-xs font-bold text-[#111827] uppercase tracking-widest mb-1.5">{caption}</p>
                   <p className="text-xs text-[#6B7280] leading-relaxed">{description}</p>
