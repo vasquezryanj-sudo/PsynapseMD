@@ -90,9 +90,6 @@ export default function ClinicsPage() {
         />
         <div className="max-w-6xl mx-auto px-6 py-24 relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-[#E8F5F3] text-[#0A7C6E] text-xs font-semibold px-3 py-1.5 rounded-full mb-6 uppercase tracking-wide">
-              For Clinics
-            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111827] leading-tight mb-6 font-[family-name:var(--font-jakarta)]">
               Practice-wide documentation, built the right way.
             </h1>

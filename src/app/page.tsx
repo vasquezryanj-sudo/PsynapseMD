@@ -23,9 +23,6 @@ export default function Home() {
         <div aria-hidden="true" className="absolute bottom-24 left-16 w-48 h-48 rounded-full border border-[#0A7C6E]/10 pointer-events-none" />
 
         <div className="relative z-10 max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 bg-[#E8F5F3] text-[#0A7C6E] text-xs font-semibold px-3 py-1.5 rounded-full mb-8 uppercase tracking-wide">
-            Built by Credentialed Professionals
-          </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-[#111827] leading-[0.92] mb-8 font-[family-name:var(--font-jakarta)]">
             Clinical documentation,<br className="hidden md:block" /> built the right way.
           </h1>
