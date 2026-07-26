@@ -56,8 +56,50 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Audience paths */}
+      {/* Built ethically and responsibly */}
       <section className="py-20 bg-[#F7F6F2]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div>
+              <p className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.3em] mb-4">Ethics &amp; Governance</p>
+              <h2 className="text-3xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
+                Responsible by design, not afterthought.
+              </h2>
+              <p className="text-[#4B5563] leading-relaxed text-lg mb-6">
+                AI in clinical settings carries real responsibility. PsynapseMD's governance policy was written by a credentialed AI Governance Professional (AIGP) — not self-certified. Privacy and data limitation are structural design decisions, not settings. And accountability doesn't end at launch: we provide ongoing support to ensure the tool is used appropriately in your practice.
+              </p>
+              <p className="text-[#4B5563] leading-relaxed text-lg mb-10">
+                No note is finalized without clinician review and attestation. Patient data is never used to train AI models. The AI structures documentation — it does not make clinical decisions.
+              </p>
+              <Link
+                href="/responsible-use"
+                className="inline-flex items-center gap-2 text-[#0A7C6E] font-semibold hover:gap-3 transition-all"
+              >
+                Read our full Responsible Use framework
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+            <div className="space-y-4 pt-2">
+              {[
+                { label: "Human-in-the-loop", detail: "Every note requires explicit clinician review and attestation before it is finalized." },
+                { label: "Data never trains AI", detail: "Patient data processed through PsynapseMD is never used to improve or train AI models." },
+                { label: "Transparent AI scope", detail: "The AI structures dictation. It does not diagnose, recommend treatment, or substitute for clinical judgment." },
+                { label: "Audit-ready records", detail: "All finalized notes are clinician-attested and logged — structured to hold up under payer or clinical review." },
+              ].map((item) => (
+                <div key={item.label} className="border border-[#E5E3DC] rounded-xl p-5 bg-white">
+                  <p className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.2em] mb-1.5">{item.label}</p>
+                  <p className="text-[#4B5563] text-sm leading-relaxed">{item.detail}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Audience paths */}
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-[#111827] mb-4 font-[family-name:var(--font-jakarta)]">
             Built for Two Kinds of Practices
@@ -140,48 +182,6 @@ export default function AboutPage() {
           <p className="mt-6 text-xs italic text-[#9CA3AF]">
             Figures shown are illustrative estimates, not sourced research findings.
           </p>
-        </div>
-      </section>
-
-      {/* Built ethically and responsibly */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
-              <p className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.3em] mb-4">Ethics &amp; Governance</p>
-              <h2 className="text-3xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
-                Responsible by design, not afterthought.
-              </h2>
-              <p className="text-[#4B5563] leading-relaxed text-lg mb-6">
-                AI in clinical settings carries real responsibility. PsynapseMD's governance policy was written by a credentialed AI Governance Professional (AIGP) — not self-certified. Privacy and data limitation are structural design decisions, not settings. And accountability doesn't end at launch: we provide ongoing support to ensure the tool is used appropriately in your practice.
-              </p>
-              <p className="text-[#4B5563] leading-relaxed text-lg mb-10">
-                No note is finalized without clinician review and attestation. Patient data is never used to train AI models. The AI structures documentation — it does not make clinical decisions.
-              </p>
-              <Link
-                href="/responsible-use"
-                className="inline-flex items-center gap-2 text-[#0A7C6E] font-semibold hover:gap-3 transition-all"
-              >
-                Read our full Responsible Use framework
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
-            <div className="space-y-4 pt-2">
-              {[
-                { label: "Human-in-the-loop", detail: "Every note requires explicit clinician review and attestation before it is finalized." },
-                { label: "Data never trains AI", detail: "Patient data processed through PsynapseMD is never used to improve or train AI models." },
-                { label: "Transparent AI scope", detail: "The AI structures dictation. It does not diagnose, recommend treatment, or substitute for clinical judgment." },
-                { label: "Audit-ready records", detail: "All finalized notes are clinician-attested and logged — structured to hold up under payer or clinical review." },
-              ].map((item) => (
-                <div key={item.label} className="border border-[#E5E3DC] rounded-xl p-5 bg-[#F7F6F2]">
-                  <p className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.2em] mb-1.5">{item.label}</p>
-                  <p className="text-[#4B5563] text-sm leading-relaxed">{item.detail}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 

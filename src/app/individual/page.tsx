@@ -66,10 +66,10 @@ export default function IndividualPage() {
               For Individual Clinicians
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111827] leading-tight mb-6 font-[family-name:var(--font-jakarta)]">
-              Get Your Evenings Back.
+              Streamlines your work.<br className="hidden md:block" /> Responsibly.
             </h1>
             <p className="text-xl text-[#4B5563] leading-relaxed max-w-2xl mb-10">
-              Dictate after each session. Leave the charting behind.
+              Dictate after each session. Get a structured note. Leave the charting behind — without cutting corners on ethics, privacy, or clinician control.
             </p>
             <Link
               href="/contact?type=individual"
@@ -148,37 +148,8 @@ export default function IndividualPage() {
         </div>
       </section>
 
-      {/* What Inaction Costs */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-12 font-[family-name:var(--font-jakarta)]">
-            What It&apos;s Costing You
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
-            <StatBlock
-              value="$25–$30"
-              label="Estimated cost of reworking and resubmitting a single denied claim."
-            />
-            <StatBlock
-              value="15–20 min"
-              label="Time you could be spending elsewhere, per patient encounter."
-            />
-            <StatBlock
-              value="10–15%"
-              label="Share of behavioral health prior auth requests denied on first submission."
-            />
-          </div>
-          <div className="bg-[#F7F6F2] rounded-2xl p-8 md:p-12">
-            <CycleDiagram />
-          </div>
-          <p className="mt-6 text-sm italic text-[#9CA3AF]">
-            Figures shown are illustrative estimates, not sourced research findings.
-          </p>
-        </div>
-      </section>
-
       {/* You're Always in Control */}
-      <section className="py-20 bg-[#F7F6F2]">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-2xl">
             <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-8 font-[family-name:var(--font-jakarta)]">
@@ -215,6 +186,35 @@ export default function IndividualPage() {
       </section>
 
 
+
+      {/* What Inaction Costs */}
+      <section className="py-20 bg-[#F7F6F2]">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-12 font-[family-name:var(--font-jakarta)]">
+            What It&apos;s Costing You
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
+            <StatBlock
+              value="$25–$30"
+              label="Estimated cost of reworking and resubmitting a single denied claim."
+            />
+            <StatBlock
+              value="15–20 min"
+              label="Time you could be spending elsewhere, per patient encounter."
+            />
+            <StatBlock
+              value="10–15%"
+              label="Share of behavioral health prior auth requests denied on first submission."
+            />
+          </div>
+          <div className="bg-white rounded-2xl p-8 md:p-12">
+            <CycleDiagram />
+          </div>
+          <p className="mt-6 text-sm italic text-[#9CA3AF]">
+            Figures shown are illustrative estimates, not sourced research findings.
+          </p>
+        </div>
+      </section>
 
       {/* CTA */}
       <CtaSection

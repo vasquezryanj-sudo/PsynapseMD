@@ -94,10 +94,10 @@ export default function ClinicsPage() {
               For Clinics
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111827] leading-tight mb-6 font-[family-name:var(--font-jakarta)]">
-              Practice-wide documentation you can trust.
+              Practice-wide documentation, built the right way.
             </h1>
             <p className="text-xl text-[#4B5563] leading-relaxed max-w-2xl mb-10">
-              Consistent, compliant notes across every provider. Less rework, fewer denials.
+              Consistent, compliant notes across every provider — with responsible AI at the foundation, and a governance framework written by a credentialed professional.
             </p>
             <Link
               href="/contact?type=clinic"
@@ -176,8 +176,18 @@ export default function ClinicsPage() {
         </div>
       </section>
 
+      {/* Compliance */}
+      <section id="compliance" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-10 font-[family-name:var(--font-jakarta)]">
+            Responsibly Made
+          </h2>
+          <ComplianceSection />
+        </div>
+      </section>
+
       {/* What Inaction Costs */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-12 font-[family-name:var(--font-jakarta)]">
             What It&apos;s Costing You
@@ -196,22 +206,12 @@ export default function ClinicsPage() {
               label="Estimated share of behavioral health prior authorization requests initially denied."
             />
           </div>
-          <div className="bg-[#F7F6F2] rounded-2xl p-8 md:p-12">
+          <div className="bg-white rounded-2xl p-8 md:p-12">
             <CycleDiagram />
           </div>
           <p className="mt-6 text-sm italic text-[#9CA3AF]">
             Figures shown are illustrative estimates, not sourced research findings.
           </p>
-        </div>
-      </section>
-
-      {/* Compliance */}
-      <section id="compliance" className="py-20 bg-[#F7F6F2]">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-10 font-[family-name:var(--font-jakarta)]">
-            Responsibly Made
-          </h2>
-          <ComplianceSection />
         </div>
       </section>
 
