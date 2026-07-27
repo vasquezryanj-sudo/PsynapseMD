@@ -65,6 +65,7 @@ const governanceItems = [
   {
     headline: "Policy written by a credentialed AI Governance Professional",
     body: "PsynapseMD's AI governance policy was authored by a credentialed AI Governance Professional (AIGP) — not drafted internally and self-certified. An independent expert with formal training in AI accountability and ethics wrote the framework that governs how this product is built and operates.",
+    badge: "/aigp-certified.png",
   },
   {
     headline: "Privacy and data limitation built into the design",
@@ -212,6 +213,9 @@ export default function ResponsibleUsePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {governanceItems.map((item) => (
               <div key={item.headline} className="border border-[#E5E3DC] rounded-2xl p-8 bg-white">
+                {"badge" in item && item.badge && (
+                  <img src={item.badge} alt="AIGP Certified" className="h-10 w-auto object-contain mb-5" />
+                )}
                 <h3 className="text-base font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">{item.headline}</h3>
                 <p className="text-[#4B5563] leading-relaxed text-sm">{item.body}</p>
               </div>

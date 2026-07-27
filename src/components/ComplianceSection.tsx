@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ImagePlaceholder from "./ImagePlaceholder";
 
 const pillars = [
   {
@@ -46,7 +45,7 @@ export default function ComplianceSection() {
         ))}
       </div>
       <div className="flex flex-col gap-8">
-        <ImagePlaceholder label="Compliance Badge Row" aspectRatio="3/1" />
+        <img src="/aigp-certified.png" alt="AIGP Certified" className="w-auto h-14 object-contain object-left" />
         <div className="border-t border-[#E5E3DC] pt-6">
           <p className="text-[#4B5563] text-sm leading-relaxed mb-3">
             Responsibility is built into the design of this product — not added on after. We publish our approach openly.
