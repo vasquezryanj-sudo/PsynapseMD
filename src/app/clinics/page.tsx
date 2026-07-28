@@ -1,6 +1,5 @@
 import Link from "next/link";
 import StatBlock from "@/components/StatBlock";
-import CycleDiagram from "@/components/CycleDiagram";
 import ComplianceSection from "@/components/ComplianceSection";
 import ValueGrid from "@/components/ValueGrid";
 import CtaSection from "@/components/CtaSection";
@@ -137,12 +136,6 @@ export default function ClinicsPage() {
               label="Estimated share of behavioral health prior authorization requests initially denied."
             />
           </div>
-          <div className="bg-[#F7F6F2] rounded-2xl p-8 md:p-12">
-            <CycleDiagram />
-          </div>
-          <p className="mt-6 text-sm italic text-[#9CA3AF]">
-            Figures shown are illustrative estimates, not sourced research findings.
-          </p>
         </div>
       </section>
 

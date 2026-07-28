@@ -2,7 +2,6 @@ import Link from "next/link";
 import HowItWorks from "@/components/HowItWorks";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import StatBlock from "@/components/StatBlock";
-import CycleDiagram from "@/components/CycleDiagram";
 import CtaSection from "@/components/CtaSection";
 import FaqSection from "@/components/FaqSection";
 
@@ -200,12 +199,6 @@ export default function IndividualPage() {
               label="Share of behavioral health prior auth requests denied on first submission."
             />
           </div>
-          <div className="bg-white rounded-2xl p-8 md:p-12">
-            <CycleDiagram />
-          </div>
-          <p className="mt-6 text-sm italic text-[#9CA3AF]">
-            Figures shown are illustrative estimates, not sourced research findings.
-          </p>
         </div>
       </section>
 

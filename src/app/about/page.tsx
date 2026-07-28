@@ -1,7 +1,6 @@
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import CtaSection from "@/components/CtaSection";
 import StatBlock from "@/components/StatBlock";
-import CycleDiagram from "@/components/CycleDiagram";
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -173,12 +172,6 @@ export default function AboutPage() {
               label="Share of behavioral health prior auth requests initially denied."
             />
           </div>
-          <div className="bg-white rounded-2xl p-8 md:p-12">
-            <CycleDiagram />
-          </div>
-          <p className="mt-6 text-xs italic text-[#9CA3AF]">
-            Figures shown are illustrative estimates, not sourced research findings.
-          </p>
         </div>
       </section>
 
