@@ -124,47 +124,49 @@ export default function ClinicsPage() {
         </div>
       </section>
 
-      {/* How It Works */}
+      {/* Dictate feature */}
       <section className="py-20 bg-[#F7F6F2]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.3em] mb-4">Step One</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
+                Just talk.
+              </h2>
+              <p className="text-[#4B5563] leading-relaxed text-lg">
+                Dictate your clinical observations after the session — freeform, in your own words. PsynapseMD transcribes and structures them in real time, against documentation templates built for ketamine, TMS, and Spravato.
+              </p>
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-[#E5E3DC] shadow-sm">
+              <img src="/screenshot-dictate.png" alt="Dictate session notes" className="w-full h-auto block object-top" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">
             How It Works
           </h2>
           <p className="text-[#4B5563] mb-12 text-lg">Three steps. No disruption.</p>
           <HowItWorks variant="clinic" />
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {[
-              {
-                caption: "Dictate Session Notes",
-                description: "Speak naturally after the session. PsynapseMD transcribes and structures your observations in real time.",
-                src: "/screenshot-dictate.png",
-                pos: "object-top",
-              },
-              {
-                caption: "Ketamine Treatment Dashboard",
-                description: "Track symptom scores, treatment timeline, tolerability, and functional improvement across the full course of care — all in one view.",
-                src: "/screenshot-clinical-note.png",
-                pos: "object-top",
-              },
-              {
-                caption: "Interventional Readiness — Type 1 Referral",
-                description: "For initial consultations, PsynapseMD surfaces treatment resistance criteria, prior medication trials, and contraindication screening to support prior authorization from the first note.",
-                src: "/screenshot-prior-auth.png",
-                pos: "object-top",
-              },
-              {
-                caption: "Review and Export",
-                description: "Every note is fully editable before you attest. Export to PDF or copy directly to your EHR.",
-                src: "/screenshot-review-export.png",
-                pos: "object-center",
-              },
-            ].map(({ caption, src, pos }) => (
-              <div key={caption} className="rounded-2xl overflow-hidden border border-[#E5E3DC]">
-                <div className="w-full h-64 overflow-hidden bg-[#F0EFEB]">
-                  <img src={src} alt={caption} className={`w-full h-full object-cover ${pos}`} />
-                </div>
-              </div>
-            ))}
+        </div>
+      </section>
+
+      {/* Ketamine Dashboard spotlight */}
+      <section className="py-20 bg-[#F7F6F2]">
+        <div className="max-w-6xl mx-auto px-6">
+          <p className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.3em] mb-4">The Clinician Dashboard</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
+            Every metric. Every session. One view.
+          </h2>
+          <p className="text-[#4B5563] text-lg mb-10 max-w-2xl">
+            Symptom score trends, treatment timeline, tolerability, functional improvement, and the full clinical note — structured and surfaced automatically from your dictation.
+          </p>
+          <div className="rounded-2xl overflow-hidden border border-[#E5E3DC] shadow-sm">
+            <img src="/screenshot-clinical-note.png" alt="Ketamine treatment dashboard" className="w-full h-auto block" />
           </div>
         </div>
       </section>
@@ -208,13 +210,53 @@ export default function ClinicsPage() {
         </div>
       </section>
 
-      {/* Value Grid */}
+      {/* Type 1 Referral feature */}
       <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 rounded-2xl overflow-hidden border border-[#E5E3DC] shadow-sm">
+              <img src="/screenshot-prior-auth.png" alt="Interventional readiness — Type 1 referral" className="w-full h-auto block" />
+            </div>
+            <div className="order-1 lg:order-2">
+              <p className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.3em] mb-4">Prior Authorization</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
+                Structured for the payer from the first note.
+              </h2>
+              <p className="text-[#4B5563] leading-relaxed text-lg">
+                For initial consultations, PsynapseMD surfaces treatment resistance criteria, prior medication trials, functional impairment scoring, and contraindication screening — the exact documentation payers look for when reviewing interventional treatment requests.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Grid */}
+      <section className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-10 font-[family-name:var(--font-jakarta)]">
             Why Clinics Switch
           </h2>
           <ValueGrid items={valueItems} />
+        </div>
+      </section>
+
+      {/* Review & Export accent */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.3em] mb-4">Review &amp; Export</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
+                You decide what the final record says.
+              </h2>
+              <p className="text-[#4B5563] leading-relaxed text-lg">
+                Every note is fully editable before you attest. Export to PDF, copy to clipboard, or send directly to your EHR. Nothing is finalized without your explicit review and signature.
+              </p>
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-[#E5E3DC] shadow-sm">
+              <img src="/screenshot-review-export.png" alt="Review and export" className="w-full h-auto block object-center" />
+            </div>
+          </div>
         </div>
       </section>
 
