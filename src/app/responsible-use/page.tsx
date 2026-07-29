@@ -263,14 +263,12 @@ export default function ResponsibleUsePage() {
                 </svg>
               </Link>
             </div>
-            <div className="hidden lg:block rounded-2xl overflow-hidden border border-[#E5E3DC]">
-              <div className="h-[280px] overflow-hidden bg-[#F0EFEB]">
-                <img
-                  src="/screenshot-review-export.png"
-                  alt="Review and export documentation"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>
+            <div className="hidden lg:block rounded-2xl overflow-hidden border border-[#E5E3DC] bg-[#F0EFEB]">
+              <img
+                src="/screenshot-review-export.png"
+                alt="Review and export documentation"
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </div>

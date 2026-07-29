@@ -120,11 +120,9 @@ export default function IndividualPage() {
                 src: "/screenshot-review-export.png",
                 pos: "object-center",
               },
-            ].map(({ caption, src, pos }) => (
-              <div key={caption} className="rounded-2xl overflow-hidden border border-[#E5E3DC]">
-                <div className="w-full h-64 overflow-hidden bg-[#F0EFEB]">
-                  <img src={src} alt={caption} className={`w-full h-full object-cover ${pos}`} />
-                </div>
+            ].map(({ caption, src }) => (
+              <div key={caption} className="rounded-2xl overflow-hidden border border-[#E5E3DC] bg-[#F0EFEB]">
+                <img src={src} alt={caption} className="w-full h-auto" />
               </div>
             ))}
           </div>
@@ -171,14 +169,12 @@ export default function IndividualPage() {
             </div>
             {/* Screenshot ambient */}
             <div className="hidden lg:block">
-              <div className="rounded-2xl overflow-hidden border border-[#E5E3DC]">
-                <div className="h-[440px] overflow-hidden bg-[#F0EFEB]">
-                  <img
-                    src="/screenshot-prior-auth.png"
-                    alt="Interventional readiness documentation"
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
+              <div className="rounded-2xl overflow-hidden border border-[#E5E3DC] bg-[#F0EFEB]">
+                <img
+                  src="/screenshot-prior-auth.png"
+                  alt="Interventional readiness documentation"
+                  className="w-full h-auto"
+                />
               </div>
             </div>
           </div>

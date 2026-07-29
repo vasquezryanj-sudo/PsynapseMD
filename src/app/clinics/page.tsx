@@ -92,15 +92,13 @@ export default function ClinicsPage() {
             </div>
             <div className="grid grid-cols-2 gap-3">
               {[
-                { src: "/screenshot-dictate.png", alt: "Dictate session notes", pos: "object-top" },
-                { src: "/screenshot-clinical-note.png", alt: "Ketamine treatment dashboard", pos: "object-top" },
-                { src: "/screenshot-prior-auth.png", alt: "Interventional readiness", pos: "object-top" },
-                { src: "/screenshot-review-export.png", alt: "Review and export", pos: "object-center" },
-              ].map(({ src, alt, pos }) => (
-                <div key={alt} className="rounded-xl overflow-hidden border border-[#E5E3DC]">
-                  <div className="h-52 overflow-hidden bg-[#F0EFEB]">
-                    <img src={src} alt={alt} className={`w-full h-full object-cover ${pos}`} />
-                  </div>
+                { src: "/screenshot-dictate.png", alt: "Dictate session notes" },
+                { src: "/screenshot-clinical-note.png", alt: "Ketamine treatment dashboard" },
+                { src: "/screenshot-prior-auth.png", alt: "Interventional readiness" },
+                { src: "/screenshot-review-export.png", alt: "Review and export" },
+              ].map(({ src, alt }) => (
+                <div key={alt} className="rounded-xl overflow-hidden border border-[#E5E3DC] bg-[#F0EFEB]">
+                  <img src={src} alt={alt} className="w-full h-auto" />
                 </div>
               ))}
             </div>
