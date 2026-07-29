@@ -80,7 +80,9 @@ export default function ClinicsPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="lg:sticky lg:top-24">
-              <p className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.3em] mb-4">The Clinician Dashboard</p>
+              <span className="inline-flex items-center bg-[#E8F5F3] text-[#0A7C6E] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
+                The Clinician Dashboard
+              </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
                 Every metric. One view.
               </h2>
@@ -96,7 +98,7 @@ export default function ClinicsPage() {
                 { src: "/screenshot-review-export.png", alt: "Review and export", pos: "object-center" },
               ].map(({ src, alt, pos }) => (
                 <div key={alt} className="rounded-xl overflow-hidden border border-[#E5E3DC]">
-                  <div className="h-44 overflow-hidden bg-[#F0EFEB]">
+                  <div className="h-52 overflow-hidden bg-[#F0EFEB]">
                     <img src={src} alt={alt} className={`w-full h-full object-cover ${pos}`} />
                   </div>
                 </div>
@@ -109,6 +111,9 @@ export default function ClinicsPage() {
       {/* Compliance */}
       <section id="compliance" className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
+          <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#0A7C6E] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
+            Ethics &amp; Governance
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-10 font-[family-name:var(--font-jakarta)]">
             Responsibly Made
           </h2>
@@ -119,10 +124,13 @@ export default function ClinicsPage() {
       {/* What Inaction Costs */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-12 font-[family-name:var(--font-jakarta)]">
+          <span className="inline-flex items-center bg-[#F7F6F2] border border-[#E5E3DC] text-[#6B7280] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
+            The Status Quo
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-14 font-[family-name:var(--font-jakarta)]">
             What It&apos;s Costing You
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
+          <div className="flex flex-col md:flex-row gap-14 md:gap-20">
             <StatBlock
               value="$25–$30"
               label="Estimated administrative cost every time a denied claim is reworked and resubmitted."
@@ -142,10 +150,17 @@ export default function ClinicsPage() {
       {/* Value Grid */}
       <section className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-10 font-[family-name:var(--font-jakarta)]">
-            Why Clinics Switch
-          </h2>
-          <ValueGrid items={valueItems} />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div className="lg:sticky lg:top-24">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-4 font-[family-name:var(--font-jakarta)]">
+                Why Clinics Switch
+              </h2>
+              <p className="text-[#4B5563] text-lg leading-relaxed">
+                Better documentation outcomes. Less friction. A governance framework that holds up under scrutiny.
+              </p>
+            </div>
+            <ValueGrid items={valueItems} />
+          </div>
         </div>
       </section>
 

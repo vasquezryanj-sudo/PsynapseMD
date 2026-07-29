@@ -117,23 +117,25 @@ export default function ResponsibleUsePage() {
       {/* Core Principles */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">
+          <span className="inline-flex items-center bg-[#E8F5F3] text-[#0A7C6E] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
             Core Principles
-          </h2>
-          <p className="text-[#4B5563] text-lg mb-12">
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">
             Three commitments that are non-negotiable in how this product is built and operated.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          </h2>
+          <div className="mt-12 divide-y divide-[#E5E3DC]">
             {principles.map((p) => (
-              <div key={p.number} className="border border-[#E5E3DC] rounded-2xl p-8 bg-[#F7F6F2]">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-9 h-9 rounded-full bg-[#E8F5F3] flex items-center justify-center text-[#0A7C6E]">
+              <div key={p.number} className="flex items-start gap-8 py-10 first:pt-0 last:pb-0">
+                <div className="flex-shrink-0 flex flex-col items-center gap-3">
+                  <span className="text-[10px] font-black text-[#0A7C6E] uppercase tracking-[0.3em]">{p.number}</span>
+                  <div className="w-10 h-10 rounded-full bg-[#E8F5F3] flex items-center justify-center text-[#0A7C6E]">
                     {p.icon}
                   </div>
-                  <span className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.3em]">{p.number}</span>
                 </div>
-                <h3 className="text-lg font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">{p.headline}</h3>
-                <p className="text-[#4B5563] leading-relaxed text-sm">{p.body}</p>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-xl font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">{p.headline}</h3>
+                  <p className="text-[#4B5563] leading-relaxed">{p.body}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -143,13 +145,18 @@ export default function ResponsibleUsePage() {
       {/* How the AI Works */}
       <section className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">
-              How the AI Works
-            </h2>
-            <p className="text-[#4B5563] text-lg mb-10">
-              Transparency about what the model does — and doesn&apos;t do — at every step.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div>
+              <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#0A7C6E] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
+                Transparency
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-4 font-[family-name:var(--font-jakarta)]">
+                How the AI Works
+              </h2>
+              <p className="text-[#4B5563] text-lg">
+                Transparency about what the model does — and doesn&apos;t do — at every step.
+              </p>
+            </div>
             <div className="space-y-0">
               {[
                 {
@@ -169,11 +176,14 @@ export default function ResponsibleUsePage() {
                   desc: "The note becomes final documentation only after your explicit review, editing, and attestation. No note is stored as final without your approval.",
                 },
               ].map((item, i, arr) => (
-                <div key={item.step} className={`flex gap-6 ${i < arr.length - 1 ? "pb-8 border-b border-[#E5E3DC]" : ""} ${i > 0 ? "pt-8" : ""}`}>
-                  <div className="flex-shrink-0">
-                    <div className="w-20 text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.2em] pt-0.5">{item.step}</div>
-                  </div>
-                  <p className="text-[#4B5563] leading-relaxed">{item.desc}</p>
+                <div
+                  key={item.step}
+                  className={`flex gap-5 ${i < arr.length - 1 ? "pb-7 border-b border-[#E5E3DC]" : ""} ${i > 0 ? "pt-7" : ""}`}
+                >
+                  <span className="inline-flex items-center flex-shrink-0 bg-[#E8F5F3] text-[#0A7C6E] text-[9px] font-black uppercase tracking-[0.2em] px-3 py-1.5 rounded-full h-fit mt-0.5">
+                    {item.step}
+                  </span>
+                  <p className="text-[#4B5563] leading-relaxed text-sm">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -184,6 +194,9 @@ export default function ResponsibleUsePage() {
       {/* Data Policy */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
+          <span className="inline-flex items-center bg-[#F7F6F2] border border-[#E5E3DC] text-[#6B7280] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
+            Plain Language
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">
             Data Policy
           </h2>
@@ -193,7 +206,9 @@ export default function ResponsibleUsePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#E5E3DC] border border-[#E5E3DC] rounded-2xl overflow-hidden">
             {dataItems.map((item) => (
               <div key={item.label} className="bg-white p-8">
-                <p className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.3em] mb-3">{item.label}</p>
+                <span className="inline-flex items-center bg-[#E8F5F3] text-[#0A7C6E] text-[9px] font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded-full mb-3">
+                  {item.label}
+                </span>
                 <p className="text-[#4B5563] leading-relaxed text-sm">{item.detail}</p>
               </div>
             ))}
@@ -204,6 +219,9 @@ export default function ResponsibleUsePage() {
       {/* AI Governance */}
       <section className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
+          <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#0A7C6E] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
+            Accountability
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">
             AI Governance
           </h2>
@@ -227,22 +245,33 @@ export default function ResponsibleUsePage() {
       {/* Questions */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="max-w-2xl">
-            <h2 className="text-3xl font-bold text-[#111827] mb-4 font-[family-name:var(--font-jakarta)]">
-              Questions about data or governance?
-            </h2>
-            <p className="text-[#4B5563] leading-relaxed text-lg mb-8">
-              If you have questions about how PsynapseMD handles patient data, operates its AI, or meets compliance requirements, reach out directly. We will give you a straight answer.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 text-[#0A7C6E] font-semibold hover:gap-3 transition-all"
-            >
-              Contact us
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-[#111827] mb-4 font-[family-name:var(--font-jakarta)]">
+                Questions about data or governance?
+              </h2>
+              <p className="text-[#4B5563] leading-relaxed text-lg mb-8">
+                If you have questions about how PsynapseMD handles patient data, operates its AI, or meets compliance requirements, reach out directly. We will give you a straight answer.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 text-[#0A7C6E] font-semibold hover:gap-3 transition-all"
+              >
+                Contact us
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+            <div className="hidden lg:block rounded-2xl overflow-hidden border border-[#E5E3DC]">
+              <div className="h-[280px] overflow-hidden bg-[#F0EFEB]">
+                <img
+                  src="/screenshot-review-export.png"
+                  alt="Review and export documentation"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

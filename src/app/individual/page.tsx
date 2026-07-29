@@ -1,6 +1,5 @@
 import Link from "next/link";
 import HowItWorks from "@/components/HowItWorks";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
 import StatBlock from "@/components/StatBlock";
 import CtaSection from "@/components/CtaSection";
 import FaqSection from "@/components/FaqSection";
@@ -9,13 +8,6 @@ const controlPoints = [
   "Nothing is finalized without your explicit approval.",
   "Every note is fully editable before you sign off.",
   "Your clinical judgment drives the output. The AI structures it, you own it.",
-];
-
-const walkthroughSteps = [
-  "Dictate your clinical observations after the session — same as any transcription tool.",
-  "PsynapseMD structures your dictation into a complete, treatment-specific note.",
-  "Review, edit, and approve with your attestation.",
-  "Documentation is structured to support prior authorization — less rework if a claim is reviewed.",
 ];
 
 const faqItems = [
@@ -98,6 +90,9 @@ export default function IndividualPage() {
       {/* How It Works */}
       <section className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
+          <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#0A7C6E] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
+            The Workflow
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">
             How It Works
           </h2>
@@ -107,25 +102,21 @@ export default function IndividualPage() {
             {[
               {
                 caption: "Dictate Session Notes",
-                description: "Speak naturally after the session. PsynapseMD transcribes and structures your observations in real time.",
                 src: "/screenshot-dictate.png",
                 pos: "object-top",
               },
               {
                 caption: "Ketamine Treatment Dashboard",
-                description: "Track symptom scores, treatment timeline, tolerability, and functional improvement across the full course of care — all in one view.",
                 src: "/screenshot-clinical-note.png",
                 pos: "object-top",
               },
               {
                 caption: "Interventional Readiness — Type 1 Referral",
-                description: "For initial consultations, PsynapseMD surfaces treatment resistance criteria, prior medication trials, and contraindication screening to support prior authorization from the first note.",
                 src: "/screenshot-prior-auth.png",
                 pos: "object-top",
               },
               {
                 caption: "Review and Export",
-                description: "Every note is fully editable before you attest. Export to PDF or copy directly to your EHR.",
                 src: "/screenshot-review-export.png",
                 pos: "object-center",
               },
@@ -143,49 +134,67 @@ export default function IndividualPage() {
       {/* You're Always in Control */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="max-w-2xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-8 font-[family-name:var(--font-jakarta)]">
-              You&apos;re Always in Control.
-            </h2>
-            <div className="space-y-5 mb-10">
-              {controlPoints.map((point, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#0A7C6E] flex items-center justify-center mt-0.5">
-                    <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-8 font-[family-name:var(--font-jakarta)]">
+                You&apos;re Always in Control.
+              </h2>
+              <div className="flex flex-col gap-3 mb-10">
+                {controlPoints.map((point, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center gap-3 bg-[#F7F6F2] border border-[#E5E3DC] rounded-full px-5 py-3.5"
+                  >
+                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#0A7C6E] flex items-center justify-center">
+                      <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-[#111827] text-sm font-medium leading-relaxed">{point}</p>
                   </div>
-                  <p className="text-[#111827] text-lg font-medium leading-relaxed">{point}</p>
-                </div>
-              ))}
+                ))}
+              </div>
+              <div className="border-t border-[#E5E3DC] pt-8">
+                <p className="text-[#4B5563] text-sm leading-relaxed mb-3">
+                  These aren&apos;t just product features — they reflect how this tool was designed to be used ethically in a clinical setting.
+                </p>
+                <Link
+                  href="/responsible-use"
+                  className="inline-flex items-center gap-2 text-[#0A7C6E] font-semibold text-sm hover:gap-3 transition-all"
+                >
+                  Read our Responsible Use framework
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
             </div>
-            <div className="border-t border-[#E5E3DC] pt-8">
-              <p className="text-[#4B5563] text-sm leading-relaxed mb-3">
-                These aren&apos;t just product features — they reflect how this tool was designed to be used ethically in a clinical setting.
-              </p>
-              <Link
-                href="/responsible-use"
-                className="inline-flex items-center gap-2 text-[#0A7C6E] font-semibold text-sm hover:gap-3 transition-all"
-              >
-                Read our Responsible Use framework
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
+            {/* Screenshot ambient */}
+            <div className="hidden lg:block">
+              <div className="rounded-2xl overflow-hidden border border-[#E5E3DC]">
+                <div className="h-[440px] overflow-hidden bg-[#F0EFEB]">
+                  <img
+                    src="/screenshot-prior-auth.png"
+                    alt="Interventional readiness documentation"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-
-
       {/* What Inaction Costs */}
       <section className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-12 font-[family-name:var(--font-jakarta)]">
+          <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#6B7280] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
+            The Status Quo
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-14 font-[family-name:var(--font-jakarta)]">
             What It&apos;s Costing You
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
+          <div className="flex flex-col md:flex-row gap-14 md:gap-20">
             <StatBlock
               value="$25–$30"
               label="Estimated cost of reworking and resubmitting a single denied claim."

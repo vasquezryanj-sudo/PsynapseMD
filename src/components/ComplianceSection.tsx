@@ -33,14 +33,17 @@ const pillars = [
 
 export default function ComplianceSection() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div className="space-y-6">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <div className="space-y-4">
         {pillars.map((pillar, i) => (
-          <div key={i} className="flex items-start gap-4">
-            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#E8F5F3] flex items-center justify-center text-[#0A7C6E]">
+          <div
+            key={i}
+            className="flex items-start gap-4 bg-white border border-[#E5E3DC] rounded-2xl px-6 py-5"
+          >
+            <div className="flex-shrink-0 w-9 h-9 rounded-full bg-[#E8F5F3] flex items-center justify-center text-[#0A7C6E] mt-0.5">
               {pillar.icon}
             </div>
-            <p className="text-[#4B5563] leading-relaxed pt-1.5">{pillar.text}</p>
+            <p className="text-[#4B5563] leading-relaxed text-sm pt-1">{pillar.text}</p>
           </div>
         ))}
       </div>

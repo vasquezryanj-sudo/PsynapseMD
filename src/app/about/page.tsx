@@ -57,7 +57,9 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <p className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.3em] mb-4">Ethics &amp; Governance</p>
+              <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#0A7C6E] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
+                Ethics &amp; Governance
+              </span>
               <h2 className="text-3xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
                 Responsible by design, not afterthought.
               </h2>
@@ -77,15 +79,20 @@ export default function AboutPage() {
                 </svg>
               </Link>
             </div>
-            <div className="space-y-4 pt-2">
+            <div className="flex flex-col gap-3 pt-2">
               {[
                 { label: "Human-in-the-loop", detail: "Every note requires explicit clinician review and attestation before it is finalized." },
                 { label: "Data never trains AI", detail: "Patient data processed through PsynapseMD is never used to improve or train AI models." },
                 { label: "Transparent AI scope", detail: "The AI structures dictation. It does not diagnose, recommend treatment, or substitute for clinical judgment." },
                 { label: "Audit-ready records", detail: "All finalized notes are clinician-attested and logged — structured to hold up under payer or clinical review." },
               ].map((item) => (
-                <div key={item.label} className="border border-[#E5E3DC] rounded-xl p-5 bg-white">
-                  <p className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.2em] mb-1.5">{item.label}</p>
+                <div
+                  key={item.label}
+                  className="bg-white border border-[#E5E3DC] rounded-2xl px-6 py-5"
+                >
+                  <span className="inline-flex items-center bg-[#E8F5F3] text-[#0A7C6E] text-[9px] font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded-full mb-2">
+                    {item.label}
+                  </span>
                   <p className="text-[#4B5563] text-sm leading-relaxed">{item.detail}</p>
                 </div>
               ))}
@@ -107,7 +114,7 @@ export default function AboutPage() {
             {/* Clinics card */}
             <Link
               href="/clinics"
-              className="group bg-white border border-[#E5E3DC] rounded-2xl p-8 hover:border-[#0A7C6E] transition-colors"
+              className="group relative overflow-hidden bg-[#F7F6F2] border border-[#E5E3DC] rounded-2xl p-8 hover:border-[#0A7C6E] transition-colors"
             >
               <div className="w-10 h-10 rounded-xl bg-[#E8F5F3] flex items-center justify-center text-[#0A7C6E] mb-6">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -129,7 +136,7 @@ export default function AboutPage() {
             {/* Individual card */}
             <Link
               href="/individual"
-              className="group bg-white border border-[#E5E3DC] rounded-2xl p-8 hover:border-[#0A7C6E] transition-colors"
+              className="group relative overflow-hidden bg-[#F7F6F2] border border-[#E5E3DC] rounded-2xl p-8 hover:border-[#0A7C6E] transition-colors"
             >
               <div className="w-10 h-10 rounded-xl bg-[#E8F5F3] flex items-center justify-center text-[#0A7C6E] mb-6">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -154,11 +161,13 @@ export default function AboutPage() {
       {/* What it costs */}
       <section className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-[10px] font-bold text-[#0A7C6E] uppercase tracking-[0.3em] mb-4">The Status Quo</p>
-          <h2 className="text-3xl font-bold text-[#111827] mb-12 font-[family-name:var(--font-jakarta)]">
+          <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#6B7280] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
+            The Status Quo
+          </span>
+          <h2 className="text-3xl font-bold text-[#111827] mb-14 font-[family-name:var(--font-jakarta)]">
             What it&apos;s costing you
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
+          <div className="flex flex-col md:flex-row gap-14 md:gap-20">
             <StatBlock
               value="$25–$30"
               label="Estimated cost to rework and resubmit a single denied claim."
