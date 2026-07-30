@@ -14,10 +14,10 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6 py-24 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111827] leading-tight mb-6 font-[family-name:var(--font-jakarta)]">
-              The burden became the practice.
+              Spend more time with your patients, not your computer screen.
             </h1>
             <p className="text-xl text-[#4B5563] leading-relaxed max-w-2xl">
-              PsynapseMD exists so that you can spend less time on documentation, and more time with patients.
+              PsynapseMD was built by clinicians who felt the weight of documentation firsthand. The tool exists for one reason: to give that time back, without cutting corners on quality, ethics, or patient care.
             </p>
           </div>
         </div>
