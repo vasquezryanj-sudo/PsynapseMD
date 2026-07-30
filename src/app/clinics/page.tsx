@@ -141,17 +141,13 @@ export default function ClinicsPage() {
       {/* Value Grid */}
       <section className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div className="lg:sticky lg:top-24">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-4 font-[family-name:var(--font-jakarta)]">
-                Why Clinics Switch
-              </h2>
-              <p className="text-[#4B5563] text-lg leading-relaxed">
-                Better documentation outcomes. Less friction. A governance framework that holds up under scrutiny.
-              </p>
-            </div>
-            <ValueGrid items={valueItems} />
-          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">
+            Why Clinics Switch
+          </h2>
+          <p className="text-[#4B5563] text-lg leading-relaxed mb-10">
+            Better documentation outcomes. Less friction. A governance framework that holds up under scrutiny.
+          </p>
+          <ValueGrid items={valueItems} />
         </div>
       </section>
 
