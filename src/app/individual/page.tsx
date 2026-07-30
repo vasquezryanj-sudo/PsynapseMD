@@ -98,33 +98,10 @@ export default function IndividualPage() {
           </h2>
           <p className="text-[#4B5563] mb-12 text-lg">Fits your existing routine.</p>
           <HowItWorks variant="individual" />
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {[
-              {
-                caption: "Dictate Session Notes",
-                src: "/screenshot-dictate.png",
-                pos: "object-top",
-              },
-              {
-                caption: "Ketamine Treatment Dashboard",
-                src: "/screenshot-clinical-note.png",
-                pos: "object-top",
-              },
-              {
-                caption: "Interventional Readiness — Type 1 Referral",
-                src: "/screenshot-prior-auth.png",
-                pos: "object-top",
-              },
-              {
-                caption: "Review and Export",
-                src: "/screenshot-review-export.png",
-                pos: "object-center",
-              },
-            ].map(({ caption, src }) => (
-              <div key={caption} className="rounded-2xl overflow-hidden border border-[#E5E3DC] bg-[#F0EFEB]">
-                <img src={src} alt={caption} className="w-full h-auto" />
-              </div>
-            ))}
+          <div className="mt-12" style={{ transform: "rotate(-1deg)" }}>
+            <div className="rounded-2xl overflow-hidden border border-[#E5E3DC] shadow-2xl bg-[#F0EFEB]">
+              <img src="/screenshot-clinical-note.png" alt="Clinical documentation dashboard" className="w-full h-auto" />
+            </div>
           </div>
         </div>
       </section>
