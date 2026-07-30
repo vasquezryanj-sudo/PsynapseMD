@@ -31,12 +31,15 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-[#111827] mb-8 font-[family-name:var(--font-jakarta)]">
                 Origin
               </h2>
-              <div className="border border-[#E5E3DC] rounded-2xl p-8 bg-[#F7F6F2]">
-                <p className="text-[#9CA3AF] text-xs font-semibold uppercase tracking-wide mb-3">
-                  Placeholder — Content Pending
+              <div className="space-y-5 text-[#4B5563] leading-relaxed text-lg">
+                <p>
+                  PsynapseMD started with a straightforward frustration: too much of the clinical day was going to documentation, and not enough to patients. In interventional psychiatry especially — where treatment is complex, prior authorization is demanding, and every session carries weight — the administrative burden had become its own clinical problem.
                 </p>
-                <p className="text-[#4B5563] italic leading-relaxed">
-                  [PLACEHOLDER: Founder bio — Wayne&apos;s background, clinical context, and motivation for building PsynapseMD. To be supplied by product owner.]
+                <p>
+                  The solution seemed obvious. AI could handle the structure. Clinicians could handle the care. But integrating AI into clinical workflows isn&apos;t straightforward — and we knew it. The questions around patient privacy, model accountability, data use, and clinician oversight weren&apos;t afterthoughts. They were the reason many tools in this space had already failed the people they were supposed to help.
+                </p>
+                <p>
+                  So before writing a line of product code, we consulted with ethicists, AI governance professionals, and responsible technology advocates. The result is a tool designed around a simple principle: efficiency should never come at the expense of the human relationship at the center of care. PsynapseMD handles the documentation so clinicians can focus on what they trained to do.
                 </p>
               </div>
             </div>
