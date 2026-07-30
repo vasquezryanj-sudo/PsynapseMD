@@ -21,7 +21,7 @@ export default function Footer() {
             <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-1">Navigate</p>
             <Link href="/clinics" className="text-sm text-gray-400 hover:text-white transition-colors">Clinics</Link>
             <Link href="/individual" className="text-sm text-gray-400 hover:text-white transition-colors">Individual Clinicians</Link>
-            <Link href="/about" className="text-sm text-gray-400 hover:text-white transition-colors">About</Link>
+            <Link href="/about" className="text-sm text-gray-400 hover:text-white transition-colors">Our Story</Link>
             <Link href="/contact" className="text-sm text-gray-400 hover:text-white transition-colors">Contact</Link>
           </nav>
 

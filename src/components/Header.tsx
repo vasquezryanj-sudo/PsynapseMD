@@ -23,7 +23,7 @@ export default function Header() {
             Clinicians
           </Link>
           <Link href="/about" className="text-xs font-semibold text-[#4B5563] hover:text-[#0A7C6E] transition-colors uppercase tracking-widest">
-            About
+            Our Story
           </Link>
           <Link
             href="/contact"
@@ -50,7 +50,7 @@ export default function Header() {
         <div className="md:hidden bg-[#F7F6F2] border-t border-[#E5E3DC] px-6 py-6 flex flex-col gap-5">
           <Link href="/clinics" className="text-xs font-semibold text-[#4B5563] uppercase tracking-widest" onClick={() => setMenuOpen(false)}>Clinics</Link>
           <Link href="/individual" className="text-xs font-semibold text-[#4B5563] uppercase tracking-widest" onClick={() => setMenuOpen(false)}>Clinicians</Link>
-          <Link href="/about" className="text-xs font-semibold text-[#4B5563] uppercase tracking-widest" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link href="/about" className="text-xs font-semibold text-[#4B5563] uppercase tracking-widest" onClick={() => setMenuOpen(false)}>Our Story</Link>
           <Link href="/contact" className="bg-[#0A7C6E] text-white text-xs font-bold px-6 py-3 rounded-full text-center uppercase tracking-widest hover:bg-[#085f54] transition-colors" onClick={() => setMenuOpen(false)}>
             Request a Demo
           </Link>
