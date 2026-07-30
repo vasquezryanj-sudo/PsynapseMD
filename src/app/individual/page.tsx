@@ -51,8 +51,8 @@ export default function IndividualPage() {
           aria-hidden="true"
           className="absolute top-40 -right-10 w-64 h-64 rounded-full border-2 border-[#0A7C6E] opacity-10 pointer-events-none"
         />
-        <div className="max-w-6xl mx-auto px-6 py-24 relative z-10">
-          <div className="max-w-3xl">
+        <div className="max-w-6xl mx-auto px-6 py-24 relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111827] leading-tight mb-6 font-[family-name:var(--font-jakarta)]">
               Streamlines your work.<br className="hidden md:block" /> Responsibly.
             </h1>
@@ -65,6 +65,11 @@ export default function IndividualPage() {
             >
               Request a Demo
             </Link>
+          </div>
+          <div className="hidden lg:block" style={{ transform: "rotate(1deg)" }}>
+            <div className="rounded-2xl overflow-hidden border border-[#E5E3DC] shadow-2xl bg-[#F0EFEB]">
+              <img src="/screenshot-clinical-note.png" alt="Clinical documentation dashboard" className="w-full h-auto" />
+            </div>
           </div>
         </div>
       </section>
@@ -95,11 +100,6 @@ export default function IndividualPage() {
           </h2>
           <p className="text-[#4B5563] mb-12 text-lg">Fits your existing routine.</p>
           <HowItWorks variant="individual" />
-          <div className="mt-12" style={{ transform: "rotate(-1deg)" }}>
-            <div className="rounded-2xl overflow-hidden border border-[#E5E3DC] shadow-2xl bg-[#F0EFEB]">
-              <img src="/screenshot-clinical-note.png" alt="Clinical documentation dashboard" className="w-full h-auto" />
-            </div>
-          </div>
         </div>
       </section>
 
