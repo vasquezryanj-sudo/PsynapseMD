@@ -90,17 +90,10 @@ export default function ClinicsPage() {
                 Symptom score trends, treatment timeline, tolerability, functional improvement, and the full clinical note — structured and surfaced automatically from your dictation.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-3">
-              {[
-                { src: "/screenshot-dictate.png", alt: "Dictate session notes" },
-                { src: "/screenshot-clinical-note.png", alt: "Ketamine treatment dashboard" },
-                { src: "/screenshot-prior-auth.png", alt: "Interventional readiness" },
-                { src: "/screenshot-review-export.png", alt: "Review and export" },
-              ].map(({ src, alt }) => (
-                <div key={alt} className="rounded-xl overflow-hidden border border-[#E5E3DC] bg-[#F0EFEB]">
-                  <img src={src} alt={alt} className="w-full h-auto" />
-                </div>
-              ))}
+            <div style={{ transform: "rotate(1deg)" }}>
+              <div className="rounded-2xl overflow-hidden border border-[#E5E3DC] shadow-2xl bg-[#F0EFEB]">
+                <img src="/screenshot-clinical-note.png" alt="Clinical documentation dashboard" className="w-full h-auto" />
+              </div>
             </div>
           </div>
         </div>
