@@ -1,6 +1,5 @@
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import CtaSection from "@/components/CtaSection";
-import StatBlock from "@/components/StatBlock";
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -154,32 +153,6 @@ export default function AboutPage() {
                 </svg>
               </span>
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* What it costs */}
-      <section className="py-20 bg-[#F7F6F2]">
-        <div className="max-w-6xl mx-auto px-6">
-          <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#6B7280] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
-            The Status Quo
-          </span>
-          <h2 className="text-3xl font-bold text-[#111827] mb-14 font-[family-name:var(--font-jakarta)]">
-            What it&apos;s costing you
-          </h2>
-          <div className="flex flex-col md:flex-row gap-14 md:gap-20">
-            <StatBlock
-              value="$25–$30"
-              label="Estimated cost to rework and resubmit a single denied claim."
-            />
-            <StatBlock
-              value="15–20 min"
-              label="Average time spent on documentation per patient encounter."
-            />
-            <StatBlock
-              value="10–15%"
-              label="Share of behavioral health prior auth requests initially denied."
-            />
           </div>
         </div>
       </section>
