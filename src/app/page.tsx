@@ -29,7 +29,7 @@ export default function Home() {
               Clinical documentation,<br className="hidden md:block" /> built the right way.
             </h1>
             <p className="text-lg text-[#4B5563] leading-relaxed max-w-lg mb-14">
-              PsynapseMD streamlines documentation for interventional psychiatry — with an AI governance framework written by a credentialed professional, privacy built into the design, and clinician control at every step.
+              AI-assisted documentation for interventional psychiatry — designed responsibly, from the start.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link

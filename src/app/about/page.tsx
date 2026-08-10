@@ -17,7 +17,7 @@ export default function AboutPage() {
               Spend more time with your patients, not your computer screen.
             </h1>
             <p className="text-xl text-[#4B5563] leading-relaxed max-w-2xl">
-              PsynapseMD was built by clinicians who felt the weight of documentation firsthand. The tool exists for one reason: to give that time back, without cutting corners on quality, ethics, or patient care.
+              Built to give clinicians their time back — without cutting corners on quality, ethics, or care.
             </p>
           </div>
         </div>
@@ -33,13 +33,10 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-5 text-[#4B5563] leading-relaxed text-lg">
                 <p>
-                  PsynapseMD started with a straightforward frustration: too much of the clinical day was going to documentation, and not enough to patients. In interventional psychiatry especially — where treatment is complex, prior authorization is demanding, and every session carries weight — the administrative burden had become its own clinical problem.
+                  PsynapseMD started with a simple frustration: too much of the clinical day was going to documentation, not patients. In interventional psychiatry — where treatment is complex and prior authorization is unforgiving — that burden had become a clinical problem in itself.
                 </p>
                 <p>
-                  The solution seemed obvious. AI could handle the structure. Clinicians could handle the care. But integrating AI into clinical workflows isn&apos;t straightforward — and we knew it. The questions around patient privacy, model accountability, data use, and clinician oversight weren&apos;t afterthoughts. They were the reason many tools in this space had already failed the people they were supposed to help.
-                </p>
-                <p>
-                  So before writing a line of product code, we consulted with ethicists, AI governance professionals, and responsible technology advocates. The result is a tool designed around a simple principle: efficiency should never come at the expense of the human relationship at the center of care. PsynapseMD handles the documentation so clinicians can focus on what they trained to do.
+                  Before writing a line of product code, we consulted with ethicists, AI governance professionals, and responsible technology advocates. The result is a tool built on one principle: efficiency should never come at the expense of the human relationship at the center of care.
                 </p>
               </div>
             </div>
@@ -65,11 +62,8 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
                 Responsible by design, not afterthought.
               </h2>
-              <p className="text-[#4B5563] leading-relaxed text-lg mb-6">
-                AI in clinical settings carries real responsibility. PsynapseMD's governance policy was written by a credentialed AI Governance Professional (AIGP) — not self-certified. Privacy and data limitation are structural design decisions, not settings. And accountability doesn't end at launch: we provide ongoing support to ensure the tool is used appropriately in your practice.
-              </p>
               <p className="text-[#4B5563] leading-relaxed text-lg mb-10">
-                No note is finalized without clinician review and attestation. Patient data is never used to train AI models. The AI structures documentation — it does not make clinical decisions.
+                AI in clinical settings carries real responsibility. PsynapseMD's governance policy was written by a credentialed AI Governance Professional — not self-certified. Privacy is structural, not a setting. No note is finalized without clinician attestation. Patient data never trains AI models.
               </p>
               <Link
                 href="/responsible-use"

@@ -57,7 +57,7 @@ export default function IndividualPage() {
               Streamlines your work.<br className="hidden md:block" /> Responsibly.
             </h1>
             <p className="text-xl text-[#4B5563] leading-relaxed max-w-2xl mb-10">
-              Dictate after each session. Get a structured note. Leave the charting behind — without cutting corners on ethics, privacy, or clinician control.
+              Dictate. Get a structured note. Leave the charting behind.
             </p>
             <Link
               href="/contact?type=individual"
@@ -77,18 +77,9 @@ export default function IndividualPage() {
       {/* The Problem */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-2xl font-semibold text-[#0A7C6E] italic leading-snug font-[family-name:var(--font-jakarta)]">
-                &ldquo;You became a clinician to treat patients, not to chart at midnight.&rdquo;
-              </p>
-            </div>
-            <div>
-              <p className="text-[#4B5563] leading-relaxed text-lg">
-                Ketamine, TMS, and Spravato each carry documentation requirements tied to payer expectations — not just clinical notes. Translating every session into that language takes time. Let PsynapseMD help.
-              </p>
-            </div>
-          </div>
+          <p className="text-2xl md:text-3xl font-semibold text-[#0A7C6E] italic leading-snug font-[family-name:var(--font-jakarta)] max-w-2xl">
+            &ldquo;You became a clinician to treat patients, not to chart at midnight.&rdquo;
+          </p>
         </div>
       </section>
 
@@ -98,7 +89,7 @@ export default function IndividualPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">
             How It Works
           </h2>
-          <p className="text-[#4B5563] mb-12 text-lg">Fits your existing routine.</p>
+          <p className="text-[#4B5563] mb-12 text-lg">Fits into your existing routine.</p>
           <HowItWorks variant="individual" />
         </div>
       </section>
@@ -128,7 +119,7 @@ export default function IndividualPage() {
               </div>
               <div className="border-t border-[#E5E3DC] pt-8">
                 <p className="text-[#4B5563] text-sm leading-relaxed mb-3">
-                  These aren&apos;t just product features — they reflect how this tool was designed to be used ethically in a clinical setting.
+                  Designed to be used ethically in a clinical setting.
                 </p>
                 <Link
                   href="/responsible-use"
@@ -184,7 +175,7 @@ export default function IndividualPage() {
       {/* CTA */}
       <CtaSection
         headline="Built for You."
-        body="Every setup starts with a consultation — not a self-serve signup. We configure the system to your practice before any clinical use begins."
+        body="Every setup starts with a conversation, not a sign-up link."
         buttonText="Request a Demo"
         href="/contact?type=individual"
       />

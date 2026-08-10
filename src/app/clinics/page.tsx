@@ -63,7 +63,7 @@ export default function ClinicsPage() {
               Practice-wide documentation, built the right way.
             </h1>
             <p className="text-xl text-[#4B5563] leading-relaxed max-w-2xl mb-10">
-              Consistent, compliant notes across every provider — with responsible AI at the foundation, and a governance framework written by a credentialed professional.
+              Consistent, compliant documentation across every provider — built responsibly.
             </p>
             <Link
               href="/contact?type=clinic"
@@ -87,7 +87,7 @@ export default function ClinicsPage() {
                 Every metric. One view.
               </h2>
               <p className="text-[#4B5563] text-lg leading-relaxed">
-                Symptom score trends, treatment timeline, tolerability, functional improvement, and the full clinical note — structured and surfaced automatically from your dictation.
+                Everything from symptom trends to the full clinical note — structured automatically from your dictation.
               </p>
             </div>
             <div style={{ transform: "rotate(1deg)" }}>
@@ -145,7 +145,7 @@ export default function ClinicsPage() {
             Why Clinics Switch
           </h2>
           <p className="text-[#4B5563] text-lg leading-relaxed mb-10">
-            Better documentation outcomes. Less friction. A governance framework that holds up under scrutiny.
+            Better outcomes. Less friction.
           </p>
           <ValueGrid items={valueItems} />
         </div>
@@ -154,7 +154,7 @@ export default function ClinicsPage() {
       {/* CTA */}
       <CtaSection
         headline="Guided from Day One."
-        body="Every implementation starts with a consultation — not a sign-up link. We configure the system to your practice before any clinical use begins."
+        body="Every implementation starts with a conversation, not a sign-up link."
         buttonText="Request a Demo"
         href="/contact?type=clinic"
       />
