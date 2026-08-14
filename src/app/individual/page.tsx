@@ -74,17 +74,8 @@ export default function IndividualPage() {
         </div>
       </section>
 
-      {/* The Problem */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <p className="text-2xl md:text-3xl font-semibold text-[#0A7C6E] italic leading-snug font-[family-name:var(--font-jakarta)] max-w-2xl">
-            &ldquo;You became a clinician to treat patients, not to chart at midnight.&rdquo;
-          </p>
-        </div>
-      </section>
-
       {/* How It Works */}
-      <section className="py-20 bg-[#F7F6F2]">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">
             How It Works
@@ -95,7 +86,7 @@ export default function IndividualPage() {
       </section>
 
       {/* You're Always in Control */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
@@ -106,7 +97,7 @@ export default function IndividualPage() {
                 {controlPoints.map((point, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-3 bg-[#F7F6F2] border border-[#E5E3DC] rounded-full px-5 py-3.5"
+                    className="flex items-center gap-3 bg-white border border-[#E5E3DC] rounded-full px-5 py-3.5"
                   >
                     <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#0A7C6E] flex items-center justify-center">
                       <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
@@ -147,7 +138,7 @@ export default function IndividualPage() {
       </section>
 
       {/* What Inaction Costs */}
-      <section className="py-20 bg-[#F7F6F2]">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#6B7280] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
             The Status Quo
