@@ -11,7 +11,7 @@ export default function ResponsibleUsePage() {
         <div className="max-w-6xl mx-auto px-6 py-24 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111827] leading-tight mb-6 font-[family-name:var(--font-jakarta)]">
-              Ethics isn&apos;t a feature.<br className="hidden md:block" /> It&apos;s the foundation.
+              Responsibility is at the core of everything we do.
             </h1>
             <p className="text-xl text-[#4B5563] leading-relaxed max-w-2xl">
               Privacy, accountability, and clinician control aren&apos;t settings in PsynapseMD. They&apos;re structural decisions made before the first line of code was written.
