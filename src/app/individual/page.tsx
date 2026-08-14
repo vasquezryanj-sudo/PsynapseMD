@@ -117,20 +117,20 @@ export default function IndividualPage() {
                   </div>
                 ))}
               </div>
-              <div className="border-t border-[#E5E3DC] pt-8">
-                <p className="text-[#4B5563] text-sm leading-relaxed mb-3">
-                  Designed to be used ethically in a clinical setting.
-                </p>
-                <Link
-                  href="/responsible-use"
-                  className="inline-flex items-center gap-2 text-[#0A7C6E] font-semibold text-sm hover:gap-3 transition-all"
-                >
-                  Read our Responsible Use framework
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <Link
+                href="/responsible-use"
+                className="group flex items-start gap-4 bg-[#E8F5F3] border border-[#0A7C6E]/20 rounded-2xl px-6 py-5 hover:bg-[#D1EDE8] transition-colors mt-2"
+              >
+                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-[#0A7C6E] flex items-center justify-center mt-0.5">
+                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
-                </Link>
-              </div>
+                </div>
+                <div>
+                  <p className="text-[#0A7C6E] font-bold text-sm mb-0.5">Designed to be used ethically in a clinical setting.</p>
+                  <p className="text-[#0A7C6E]/70 text-xs group-hover:text-[#0A7C6E] transition-colors">Read our Responsible Use framework →</p>
+                </div>
+              </Link>
             </div>
             {/* Screenshot ambient */}
             <div className="hidden lg:block">
