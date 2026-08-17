@@ -50,7 +50,7 @@ export default function ComplianceSection() {
       <div className="flex flex-col gap-8">
         <img src="/aigp-certified.png" alt="AIGP Certified" className="w-full h-auto object-contain" />
         <div className="border-t border-[#E5E3DC] pt-6">
-          <p className="text-[#4B5563] text-sm leading-relaxed mb-3">
+          <p className="text-[#111827] text-sm leading-relaxed mb-3 font-bold font-[family-name:var(--font-jakarta)]">
             Responsibility is built into the design of this product — not added on after. We publish our approach openly.
           </p>
           <Link
