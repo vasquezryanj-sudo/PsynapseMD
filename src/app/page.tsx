@@ -1,5 +1,4 @@
 import Link from "next/link";
-import TrustStrip from "@/components/TrustStrip";
 
 export default function Home() {
   return (
@@ -29,7 +28,7 @@ export default function Home() {
               Clinical documentation,<br className="hidden md:block" /> built the right way.
             </h1>
             <p className="text-lg text-[#4B5563] leading-relaxed max-w-lg mb-14">
-              AI-assisted documentation for interventional psychiatry — designed responsibly, from the start.
+              AI-assisted documentation for interventional psychiatry. Designed ethically, used responsibly.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -66,8 +65,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Strip */}
-      <TrustStrip />
     </>
   );
 }
