@@ -60,10 +60,10 @@ export default function ClinicsPage() {
         <div className="max-w-6xl mx-auto px-6 py-24 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111827] leading-tight mb-6 font-[family-name:var(--font-jakarta)]">
-              Practice-wide documentation, built the right way.
+              Standardized documentation. Decreased denial rates. All with ethics and responsibility at the center.
             </h1>
             <p className="text-xl text-[#4B5563] leading-relaxed max-w-2xl mb-10">
-              Consistent, compliant documentation across every provider — built responsibly.
+              Consistent, compliant documentation across every provider.
             </p>
             <Link
               href="/contact?type=clinic"

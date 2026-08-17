@@ -85,8 +85,8 @@ export default function ResponsibleUsePage() {
           </h2>
           <div className="flex flex-col md:flex-row gap-0 md:divide-x md:divide-[#E5E3DC]">
             {[
-              { step: "Input", desc: "You dictate observations after the session — freeform, in your own words." },
-              { step: "Process", desc: "A language model structures your dictation into a treatment-specific note template. It organizes — it does not interpret." },
+              { step: "Input", desc: "You dictate observations after the session. Freeform, in your own words." },
+              { step: "Process", desc: "A language model structures your dictation into a treatment-specific note template. It only organizes. It does not interpret or diagnose." },
               { step: "Output", desc: "A complete draft is presented for review. Every field is editable. Nothing is pre-approved." },
               { step: "Finalization", desc: "The note becomes final only after your explicit review and attestation." },
             ].map((item, i) => (
@@ -111,10 +111,10 @@ export default function ResponsibleUsePage() {
             <div>
               <h3 className="text-lg font-bold text-[#111827] mb-4 font-[family-name:var(--font-jakarta)]">What we collect and why</h3>
               <p className="text-[#4B5563] text-sm leading-relaxed mb-6">
-                Session dictations, generated note content, and account information — only what is required to produce documentation. Data minimization is a structural design constraint, not a preference.
+                Data minimization, only using the minimum amount of data required and for the minimum amount of time, is a structural design constraint, not a preference.
               </p>
               <p className="text-[#4B5563] text-sm leading-relaxed">
-                Infrastructure is HIPAA-compliant on Microsoft Azure, encrypted in transit and at rest. Business Associate Agreements (BAAs) in place as required. You retain ownership of your documentation at all times.
+                Infrastructure is HIPAA-compliant and private. No notes touch a cloud, a server, or anything outside of your personal account. You retain ownership of your documentation at all times.
               </p>
             </div>
             <div>
@@ -154,7 +154,7 @@ export default function ResponsibleUsePage() {
               </h2>
               <img src="/aigp-certified.png" alt="AIGP Certified" className="w-48 h-auto object-contain mb-6" />
               <p className="text-[#4B5563] leading-relaxed text-sm mb-8">
-                PsynapseMD&apos;s governance policy was authored by a credentialed AI Governance Professional (AIGP) — independently, not self-certified. Ethics and accountability are external constraints on this product, not internal claims about it.
+                PsynapseMD&apos;s governance policy was authored by a credentialed AI Governance Professional (AIGP). Ethics and accountability were built into the design of our product.
               </p>
               <Link
                 href="/contact"
@@ -170,9 +170,9 @@ export default function ResponsibleUsePage() {
               {[
                 { label: "Privacy by design", detail: "Data minimization is structural. Features requiring broader data access were excluded at the design stage." },
                 { label: "Clinician attestation", detail: "Every note requires explicit clinician review and sign-off before it is stored as a finalized record." },
-                { label: "Audit-ready records", detail: "All finalized notes are logged and structured to support payer audits and compliance review." },
+                { label: "Audit-ready records", detail: "All finalized notes are logged and structured to support payer audits and compliance review, all on local storage." },
                 { label: "Non-clinical scope", detail: "PsynapseMD is a documentation tool. It does not make clinical recommendations or substitute for clinical judgment." },
-                { label: "Ongoing accountability", detail: "Responsible use doesn't end at launch. A named point of contact is available throughout your engagement." },
+                { label: "Ongoing accountability", detail: "Responsible use doesn't end at launch. Technology is always evolving, and we are here to help. A named point of contact is available throughout your engagement." },
               ].map((item) => (
                 <div key={item.label} className="bg-white border border-[#E5E3DC] rounded-2xl px-6 py-5">
                   <span className="inline-flex items-center bg-[#E8F5F3] text-[#0A7C6E] text-[9px] font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded-full mb-2">
