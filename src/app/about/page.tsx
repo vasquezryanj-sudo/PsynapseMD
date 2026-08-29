@@ -54,9 +54,10 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
                 Responsible by design, not afterthought.
               </h2>
-              <p className="text-[#4B5563] leading-relaxed text-lg mb-10">
+              <p className="text-[#4B5563] leading-relaxed text-lg mb-6">
                 AI in clinical settings carries real responsibility. PsynapseMD's governance policy was written by a credentialed AI Governance Professional. This sets PsynapseMD apart.
               </p>
+              <img src="/aigp-certified.png" alt="AIGP Certified" className="w-48 h-auto object-contain mb-8" />
               <Link
                 href="/responsible-use"
                 className="inline-flex items-center gap-2 text-[#0A7C6E] font-semibold hover:gap-3 transition-all"
