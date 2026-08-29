@@ -1,4 +1,3 @@
-import ImagePlaceholder from "@/components/ImagePlaceholder";
 import CtaSection from "@/components/CtaSection";
 import Link from "next/link";
 
@@ -41,11 +40,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="flex flex-col items-center lg:items-end pt-16">
-              <ImagePlaceholder
-                label="Founder Headshot"
-                aspectRatio="1/1"
-                className="max-w-[200px]"
-              />
+              <img src="/logo.png" alt="PsynapseMD" className="w-[200px] h-[200px] object-contain" />
             </div>
           </div>
         </div>
