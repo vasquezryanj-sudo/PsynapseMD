@@ -1,14 +1,8 @@
 import Link from "next/link";
 import HowItWorks from "@/components/HowItWorks";
-import StatBlock from "@/components/StatBlock";
+import ComplianceSection from "@/components/ComplianceSection";
 import CtaSection from "@/components/CtaSection";
 import FaqSection from "@/components/FaqSection";
-
-const controlPoints = [
-  "Nothing is finalized without your explicit approval.",
-  "Every note is fully editable before you sign off.",
-  "Your clinical judgment drives the output. The AI structures it, you own it.",
-];
 
 const faqItems = [
   {
@@ -54,10 +48,10 @@ export default function IndividualPage() {
         <div className="max-w-6xl mx-auto px-6 py-24 relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111827] leading-tight mb-6 font-[family-name:var(--font-jakarta)]">
-              Streamlines your work.<br className="hidden md:block" /> Responsibly.
+              Streamlines your work responsibly.<br className="hidden md:block" />
             </h1>
             <p className="text-xl text-[#4B5563] leading-relaxed max-w-2xl mb-10">
-              Dictate. Get a structured note. Leave the charting behind.
+              Dictate and get a structured note. Leave the charting time behind.
             </p>
             <Link
               href="/contact?type=individual"
@@ -80,86 +74,21 @@ export default function IndividualPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-3 font-[family-name:var(--font-jakarta)]">
             How It Works
           </h2>
-          <p className="text-[#4B5563] mb-12 text-lg">Fits into your existing routine.</p>
+          <p className="text-[#4B5563] mb-12 text-lg">PsynapseMD fits easily into your existing routine.</p>
           <HowItWorks variant="individual" />
         </div>
       </section>
 
-      {/* You're Always in Control */}
+      {/* Responsibly Made */}
       <section className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-8 font-[family-name:var(--font-jakarta)]">
-                You&apos;re Always in Control.
-              </h2>
-              <div className="flex flex-col gap-3 mb-10">
-                {controlPoints.map((point, i) => (
-                  <div
-                    key={i}
-                    className="flex items-center gap-3 bg-white border border-[#E5E3DC] rounded-full px-5 py-3.5"
-                  >
-                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#0A7C6E] flex items-center justify-center">
-                      <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <p className="text-[#111827] text-sm font-medium leading-relaxed">{point}</p>
-                  </div>
-                ))}
-              </div>
-              <Link
-                href="/responsible-use"
-                className="group flex items-start gap-4 bg-[#E8F5F3] border border-[#0A7C6E]/20 rounded-2xl px-6 py-5 hover:bg-[#D1EDE8] transition-colors mt-2"
-              >
-                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-[#0A7C6E] flex items-center justify-center mt-0.5">
-                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-[#0A7C6E] font-bold text-sm mb-0.5">Designed to be used ethically in a clinical setting.</p>
-                  <p className="text-[#0A7C6E]/70 text-xs group-hover:text-[#0A7C6E] transition-colors">Read our Responsible Use framework →</p>
-                </div>
-              </Link>
-            </div>
-            {/* Screenshot ambient */}
-            <div className="hidden lg:block">
-              <div className="rounded-2xl overflow-hidden border border-[#E5E3DC] bg-[#F0EFEB]">
-                <img
-                  src="/screenshot-prior-auth.png"
-                  alt="Interventional readiness documentation"
-                  className="w-full h-auto"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What Inaction Costs */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#6B7280] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
-            The Status Quo
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-14 font-[family-name:var(--font-jakarta)]">
-            What It&apos;s Costing You
+          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-4 font-[family-name:var(--font-jakarta)]">
+            Responsibly Made
           </h2>
-          <div className="flex flex-col md:flex-row gap-14 md:gap-20">
-            <StatBlock
-              value="$25–$30"
-              label="Estimated cost of reworking and resubmitting a single denied claim."
-            />
-            <StatBlock
-              value="15–20 min"
-              label="Time you could be spending elsewhere, per patient encounter."
-            />
-            <StatBlock
-              value="10–15%"
-              label="Share of behavioral health prior auth requests denied on first submission."
-            />
-          </div>
+          <p className="text-[#4B5563] text-lg leading-relaxed mb-10">
+            PsynapseMD was created with human-centered design principles, all of which prioritize the safety and privacy of the clinicians and patients alike.
+          </p>
+          <ComplianceSection />
         </div>
       </section>
 

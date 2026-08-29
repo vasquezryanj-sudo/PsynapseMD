@@ -61,8 +61,18 @@ const individualSteps: StepConfig[] = [
   },
   {
     number: "03",
+    title: "Map onto Insurance.",
+    description: "Upload your patient's insurance plan, and let PsynapseMD surface any gaps between your clinical note and your patient's insurance needs. PsynapseMD will make a recommendation as to whether or not to submit, all explained thoroughly.",
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+      </svg>
+    ),
+  },
+  {
+    number: "04",
     title: "You Approve.",
-    description: "Review the note, make any edits, and approve it with your attestation. Nothing is ever finalized without you.",
+    description: "Review your new notes, make any edits, and approve it with your attestation. Nothing is finalized without you.",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
@@ -79,7 +89,7 @@ export default function HowItWorks({ variant }: HowItWorksProps) {
   const steps = variant === "clinic" ? clinicSteps : individualSteps;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#E5E3DC]">
+    <div className={`grid grid-cols-1 ${variant === "individual" ? "md:grid-cols-4" : "md:grid-cols-3"} gap-px bg-[#E5E3DC]`}>
       {steps.map((step) => (
         <div
           key={step.number}

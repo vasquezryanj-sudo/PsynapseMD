@@ -38,8 +38,8 @@ const valueItems = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
       </svg>
     ),
-    headline: "Audit-Ready Records",
-    description: "Every output is clinician-attested and logged — ready for payer audits without scrambling.",
+    headline: "Ethics Set Us Apart",
+    description: "Other products claim to increase efficiency, but without caring for your patients. PsynapseMD puts ethics at the center.",
   },
 ];
 
@@ -60,10 +60,10 @@ export default function ClinicsPage() {
         <div className="max-w-6xl mx-auto px-6 py-24 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111827] leading-tight mb-6 font-[family-name:var(--font-jakarta)]">
-              Standardized documentation. Decreased denial rates. All with ethics and responsibility at the center.
+              Standardize your documentation and decrease your denial rates with just a few clicks.
             </h1>
             <p className="text-xl text-[#4B5563] leading-relaxed max-w-2xl mb-10">
-              Consistent, compliant documentation across every provider.
+              PsynapseMD streamlines your clinic's documentation process, and facilitates smooth and reliable preauthorization. Every step designed with your patients' privacy at the center.
             </p>
             <Link
               href="/contact?type=clinic"
@@ -80,14 +80,11 @@ export default function ClinicsPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="lg:sticky lg:top-24">
-              <span className="inline-flex items-center bg-[#E8F5F3] text-[#0A7C6E] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
-                The Clinician Dashboard
-              </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
-                Every metric. One view.
+                Our clinical dashboard combines everything in one easy-to-read view.
               </h2>
               <p className="text-[#4B5563] text-lg leading-relaxed">
-                Everything from symptom trends to the full clinical note — structured automatically from your dictation.
+                Symptom trends, a full clinical note, fit to your patients' insurance. All in once place.
               </p>
             </div>
             <div style={{ transform: "rotate(1deg)" }}>
@@ -102,12 +99,12 @@ export default function ClinicsPage() {
       {/* Compliance */}
       <section id="compliance" className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
-          <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#0A7C6E] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
-            Ethics &amp; Governance
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-10 font-[family-name:var(--font-jakarta)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-4 font-[family-name:var(--font-jakarta)]">
             Responsibly Made
           </h2>
+          <p className="text-[#4B5563] text-lg leading-relaxed mb-10">
+            PsynapseMD was created with human-centered design principles, all of which prioritize the safety and privacy of the clinicians and patients alike.
+          </p>
           <ComplianceSection />
         </div>
       </section>
@@ -115,24 +112,21 @@ export default function ClinicsPage() {
       {/* What Inaction Costs */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <span className="inline-flex items-center bg-[#F7F6F2] border border-[#E5E3DC] text-[#6B7280] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
-            The Status Quo
-          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-14 font-[family-name:var(--font-jakarta)]">
-            What It&apos;s Costing You
+            Save with PsynapseMD
           </h2>
           <div className="flex flex-col md:flex-row gap-14 md:gap-20">
             <StatBlock
-              value="$25–$30"
-              label="Estimated administrative cost every time a denied claim is reworked and resubmitted."
+              value="10–15%"
+              label="Estimated share of behavioral health prior authorization requests initially denied."
             />
             <StatBlock
               value="15–20 min"
               label="Average time clinicians spend on documentation per patient encounter."
             />
             <StatBlock
-              value="10–15%"
-              label="Estimated share of behavioral health prior authorization requests initially denied."
+              value="$25–$30"
+              label="Estimated administrative cost every time a denied claim is reworked and resubmitted."
             />
           </div>
         </div>
@@ -145,7 +139,7 @@ export default function ClinicsPage() {
             Why Clinics Switch
           </h2>
           <p className="text-[#4B5563] text-lg leading-relaxed mb-10">
-            Better outcomes. Less friction.
+            Better outcomes. Less friction. No corners cut.
           </p>
           <ValueGrid items={valueItems} />
         </div>

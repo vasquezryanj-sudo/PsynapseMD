@@ -20,12 +20,36 @@ export default function ResponsibleUsePage() {
         </div>
       </section>
 
-      {/* Core Principles */}
+      {/* How the AI Works */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <span className="inline-flex items-center bg-[#E8F5F3] text-[#0A7C6E] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-10">
+          <h2 className="text-3xl font-bold text-[#111827] mb-12 font-[family-name:var(--font-jakarta)]">
+            How the AI works
+          </h2>
+          <div className="flex flex-col md:flex-row gap-0 md:divide-x md:divide-[#E5E3DC]">
+            {[
+              { step: "Input", desc: "You dictate observations after the session. Freeform, in your own words." },
+              { step: "Process", desc: "A language model structures your dictation into a treatment-specific note template. It only organizes. It does not interpret or diagnose." },
+              { step: "Output", desc: "A complete draft is presented for review. Every field is editable. Nothing is pre-approved." },
+              { step: "Finalization", desc: "The note becomes final only after your explicit review and attestation." },
+            ].map((item, i) => (
+              <div key={item.step} className={`flex-1 px-0 md:px-8 first:pl-0 last:pr-0 ${i > 0 ? "pt-8 md:pt-0 border-t md:border-t-0 border-[#E5E3DC]" : ""}`}>
+                <span className="inline-flex items-center bg-[#E8F5F3] text-[#0A7C6E] text-[9px] font-black uppercase tracking-[0.2em] px-3 py-1.5 rounded-full mb-4">
+                  {item.step}
+                </span>
+                <p className="text-[#4B5563] text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Core Principles */}
+      <section className="py-20 bg-[#F7F6F2]">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-[#111827] mb-10 font-[family-name:var(--font-jakarta)]">
             Core Principles
-          </span>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               {
@@ -59,7 +83,7 @@ export default function ResponsibleUsePage() {
                 ),
               },
             ].map((p) => (
-              <div key={p.number} className="bg-[#F7F6F2] border border-[#E5E3DC] rounded-2xl p-7">
+              <div key={p.number} className="bg-white border border-[#E5E3DC] rounded-2xl p-7">
                 <div className="flex items-center gap-3 mb-5">
                   <div className="w-9 h-9 rounded-full bg-[#E8F5F3] flex items-center justify-center text-[#0A7C6E] flex-shrink-0">
                     {p.icon}
@@ -74,40 +98,13 @@ export default function ResponsibleUsePage() {
         </div>
       </section>
 
-      {/* How the AI Works */}
-      <section className="py-20 bg-[#F7F6F2]">
-        <div className="max-w-6xl mx-auto px-6">
-          <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#0A7C6E] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
-            Transparency
-          </span>
-          <h2 className="text-3xl font-bold text-[#111827] mb-12 font-[family-name:var(--font-jakarta)]">
-            How the AI works
-          </h2>
-          <div className="flex flex-col md:flex-row gap-0 md:divide-x md:divide-[#E5E3DC]">
-            {[
-              { step: "Input", desc: "You dictate observations after the session. Freeform, in your own words." },
-              { step: "Process", desc: "A language model structures your dictation into a treatment-specific note template. It only organizes. It does not interpret or diagnose." },
-              { step: "Output", desc: "A complete draft is presented for review. Every field is editable. Nothing is pre-approved." },
-              { step: "Finalization", desc: "The note becomes final only after your explicit review and attestation." },
-            ].map((item, i) => (
-              <div key={item.step} className={`flex-1 px-0 md:px-8 first:pl-0 last:pr-0 ${i > 0 ? "pt-8 md:pt-0 border-t md:border-t-0 border-[#E5E3DC]" : ""}`}>
-                <span className="inline-flex items-center bg-[#E8F5F3] text-[#0A7C6E] text-[9px] font-black uppercase tracking-[0.2em] px-3 py-1.5 rounded-full mb-4">
-                  {item.step}
-                </span>
-                <p className="text-[#4B5563] text-sm leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Data Policy */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <span className="inline-flex items-center bg-[#F7F6F2] border border-[#E5E3DC] text-[#6B7280] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
+          <h2 className="text-3xl font-bold text-[#111827] mb-8 font-[family-name:var(--font-jakarta)]">
             Data Policy
-          </span>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-8">
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-4">
             <div>
               <h3 className="text-lg font-bold text-[#111827] mb-4 font-[family-name:var(--font-jakarta)]">What we collect and why</h3>
               <p className="text-[#4B5563] text-sm leading-relaxed mb-6">
@@ -141,48 +138,25 @@ export default function ResponsibleUsePage() {
         </div>
       </section>
 
-      {/* AI Governance */}
+      {/* AI Governance Support */}
       <section className="py-20 bg-[#F7F6F2]">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
-              <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#0A7C6E] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
-                Accountability
-              </span>
-              <h2 className="text-3xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
-                AI Governance
-              </h2>
-              <img src="/aigp-certified.png" alt="AIGP Certified" className="w-48 h-auto object-contain mb-6" />
-              <p className="text-[#4B5563] leading-relaxed text-sm mb-8">
-                PsynapseMD&apos;s governance policy was authored by a credentialed AI Governance Professional (AIGP). Ethics and accountability were built into the design of our product.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 text-[#0A7C6E] font-semibold text-sm hover:gap-3 transition-all"
-              >
-                Governance questions? Contact us
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
-            <div className="space-y-3">
-              {[
-                { label: "Privacy by design", detail: "Data minimization is structural. Features requiring broader data access were excluded at the design stage." },
-                { label: "Clinician attestation", detail: "Every note requires explicit clinician review and sign-off before it is stored as a finalized record." },
-                { label: "Audit-ready records", detail: "All finalized notes are logged and structured to support payer audits and compliance review, all on local storage." },
-                { label: "Non-clinical scope", detail: "PsynapseMD is a documentation tool. It does not make clinical recommendations or substitute for clinical judgment." },
-                { label: "Ongoing accountability", detail: "Responsible use doesn't end at launch. Technology is always evolving, and we are here to help. A named point of contact is available throughout your engagement." },
-              ].map((item) => (
-                <div key={item.label} className="bg-white border border-[#E5E3DC] rounded-2xl px-6 py-5">
-                  <span className="inline-flex items-center bg-[#E8F5F3] text-[#0A7C6E] text-[9px] font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded-full mb-2">
-                    {item.label}
-                  </span>
-                  <p className="text-[#4B5563] text-sm leading-relaxed">{item.detail}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <h2 className="text-3xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
+            AI Governance Support
+          </h2>
+          <img src="/aigp-certified.png" alt="AIGP Certified" className="w-48 h-auto object-contain mb-6" />
+          <p className="text-[#4B5563] leading-relaxed text-sm mb-8 max-w-2xl">
+            PsynapseMD&apos;s governance policy was authored by a credentialed AI Governance Professional. We offer ongoing support so you can understand and take ownership of your use of the interface. Never doubt that you are using our technology ethically and responsibly.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 text-[#0A7C6E] font-semibold text-sm hover:gap-3 transition-all"
+          >
+            Governance questions? Contact us
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
         </div>
       </section>
 

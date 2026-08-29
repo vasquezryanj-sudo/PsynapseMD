@@ -2,7 +2,15 @@ import Link from "next/link";
 
 const pillars = [
   {
-    text: "HIPAA-compliant infrastructure hosted on Microsoft Azure — encrypted in transit and at rest.",
+    text: "We brought on a credentialed AI Governance Professional (AIGP) at the design phase to ensure PsynapseMD was made with transparency, accountability, and explainability at the center.",
+    icon: (
+      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+      </svg>
+    ),
+  },
+  {
+    text: "HIPAA-compliant infrastructure as the floor. We've gone above and beyond the basic requirements to make your system more robust while ensuring you're remaining responsible.",
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path
@@ -14,15 +22,7 @@ const pillars = [
     ),
   },
   {
-    text: "AI governance policy written by a credentialed AI Governance Professional (AIGP) — transparent, accountable, and independently authored from design through deployment.",
-    icon: (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-      </svg>
-    ),
-  },
-  {
-    text: "Human intervention at every step — no note is generated, reviewed, or finalized without a clinician in the loop.",
+    text: "Human intervention at every step, so you remain in control. No note is generated, reviewed, or finalized without a clinician in the loop.",
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />

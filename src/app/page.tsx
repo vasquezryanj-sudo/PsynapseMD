@@ -25,10 +25,10 @@ export default function Home() {
           {/* Left — text */}
           <div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#111827] leading-[0.92] mb-8 font-[family-name:var(--font-jakarta)]">
-              Clinical documentation,<br className="hidden md:block" /> built the right way.
+              Clinical documentation<br className="hidden md:block" /> responsibly designed.
             </h1>
             <p className="text-lg text-[#4B5563] leading-relaxed max-w-lg mb-14">
-              AI-assisted documentation for interventional psychiatry. Designed ethically, used responsibly.
+              AI-assisted clinical documentation for interventional psychiatry, consciously designed by humans who care.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link

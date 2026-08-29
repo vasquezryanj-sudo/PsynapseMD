@@ -17,7 +17,7 @@ export default function AboutPage() {
               Spend more time with your patients, not your computer screen.
             </h1>
             <p className="text-xl text-[#4B5563] leading-relaxed max-w-2xl">
-              Built to give clinicians their time back — without cutting corners on quality, ethics, or care.
+              Built to give clinicians their time back without cutting corners on quality, ethics, or care.
             </p>
           </div>
         </div>
@@ -33,10 +33,10 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-5 text-[#4B5563] leading-relaxed text-lg">
                 <p>
-                  PsynapseMD started with a simple frustration: too much of the clinical day was going to documentation, not patients. In interventional psychiatry — where treatment is complex and prior authorization is unforgiving — that burden had become a clinical problem in itself.
+                  PsynapseMD started with a simple observation: too much of the clinical day is spent on documentation, not patients, and clinics are still experiencing denials for interventional care. Treatment is complex and prior authorization is unforgiving. With complicated insurance policies to interact with, that burden has become a clinical problem in itself.
                 </p>
                 <p>
-                  Before writing a line of product code, we consulted with ethicists, AI governance professionals, and responsible technology advocates. The result is a tool built on one principle: efficiency should never come at the expense of the human relationship at the center of care.
+                  Other products promise results without an ethical framework or an understanding of the risks of irresponsible AI use. Before writing a line of product code, we consulted with ethicists, AI governance professionals, and responsible technology advocates. The result is a tool built on one principle: efficiency should never come at the expense of the human relationship at the center of care.
                 </p>
               </div>
             </div>
@@ -56,14 +56,11 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <span className="inline-flex items-center bg-white border border-[#E5E3DC] text-[#0A7C6E] text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full mb-5">
-                Ethics &amp; Governance
-              </span>
               <h2 className="text-3xl font-bold text-[#111827] mb-6 font-[family-name:var(--font-jakarta)]">
                 Responsible by design, not afterthought.
               </h2>
               <p className="text-[#4B5563] leading-relaxed text-lg mb-10">
-                AI in clinical settings carries real responsibility. PsynapseMD's governance policy was written by a credentialed AI Governance Professional — not self-certified. Privacy is structural, not a setting. No note is finalized without clinician attestation. Patient data never trains AI models.
+                AI in clinical settings carries real responsibility. PsynapseMD's governance policy was written by a credentialed AI Governance Professional. This sets PsynapseMD apart.
               </p>
               <Link
                 href="/responsible-use"
